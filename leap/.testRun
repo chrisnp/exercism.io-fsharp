@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\leap\bin\Debug\netcoreapp2.0\Leap.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:05.1124553]   Discovering: Leap
+[xUnit.net 00:00:05.5540175]   Discovered:  Leap
+[xUnit.net 00:00:05.5931715]   Starting:    Leap
+[xUnit.net 00:00:07.6009420]   Finished:    Leap
+
+Total tests: 4. Passed: 4. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 20.5242 Seconds
