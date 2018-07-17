@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\bob\bin\Debug\netcoreapp2.0\Bob.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:02.6110739]   Discovering: Bob
+[xUnit.net 00:00:02.8941001]   Discovered:  Bob
+[xUnit.net 00:00:02.9174950]   Starting:    Bob
+[xUnit.net 00:00:04.1408911]   Finished:    Bob
+
+Total tests: 25. Passed: 25. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 7.3741 Seconds
