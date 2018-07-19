@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for C:\Users\Chris\exercism\fsharp\robot-name\bin\Debug\netcoreapp2.0\RobotName.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:00.5577405]   Discovering: RobotName
+[xUnit.net 00:00:00.6215837]   Discovered:  RobotName
+[xUnit.net 00:00:00.6274635]   Starting:    RobotName
+[xUnit.net 00:00:00.8832011]   Finished:    RobotName
+
+Total tests: 4. Passed: 4. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 1.7270 Seconds
