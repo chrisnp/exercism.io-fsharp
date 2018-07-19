@@ -14,3 +14,19 @@ Starting test execution, please wait...
 Total tests: 5. Passed: 5. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 4.3553 Seconds
+Build started, please wait...
+Build completed.
+
+Test run for C:\Users\Chris\exercism\fsharp\rna-transcription\bin\Debug\netcoreapp2.0\RnaTranscription.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:03.0698970]   Discovering: RnaTranscription
+[xUnit.net 00:00:03.4220981]   Discovered:  RnaTranscription
+[xUnit.net 00:00:03.4544837]   Starting:    RnaTranscription
+[xUnit.net 00:00:05.0827334]   Finished:    RnaTranscription
+
+Total tests: 5. Passed: 5. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 9.3609 Seconds
