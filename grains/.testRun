@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\grains\bin\Debug\netcoreapp2.0\Grains.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:00.8005398]   Discovering: Grains
+[xUnit.net 00:00:00.8656802]   Discovered:  Grains
+[xUnit.net 00:00:00.8715260]   Starting:    Grains
+[xUnit.net 00:00:01.2599495]   Finished:    Grains
+
+Total tests: 11. Passed: 11. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 2.0411 Seconds
