@@ -14,3 +14,22 @@ Starting test execution, please wait...
 Total tests: 11. Passed: 11. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 2.0411 Seconds
+
+
+
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\grains\bin\Debug\netcoreapp2.0\Grains.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:03.4907258]   Discovering: Grains
+[xUnit.net 00:00:03.8971018]   Discovered:  Grains
+[xUnit.net 00:00:03.9292957]   Starting:    Grains
+[xUnit.net 00:00:06.2695794]   Finished:    Grains
+
+Total tests: 11. Passed: 11. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 11.8986 Seconds
