@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\raindrops\bin\Debug\netcoreapp2.0\Raindrops.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:12.4876707]   Discovering: Raindrops
+[xUnit.net 00:00:12.9344332]   Discovered:  Raindrops
+[xUnit.net 00:00:12.9755513]   Starting:    Raindrops
+[xUnit.net 00:00:15.0569179]   Finished:    Raindrops
+
+Total tests: 18. Passed: 18. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 23.2685 Seconds
