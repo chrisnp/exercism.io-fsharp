@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\space-age\bin\Debug\netcoreapp2.0\SpaceAge.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:03.9213624]   Discovering: SpaceAge
+[xUnit.net 00:00:04.3535041]   Discovered:  SpaceAge
+[xUnit.net 00:00:04.3894275]   Starting:    SpaceAge
+[xUnit.net 00:00:05.8146360]   Finished:    SpaceAge
+
+Total tests: 8. Passed: 8. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 9.6742 Seconds
