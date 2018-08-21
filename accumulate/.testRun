@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for C:\Users\Chris\exercism\fsharp\accumulate\bin\Debug\netcoreapp2.0\Accumulate.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.5.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:02.6738879]   Discovering: Accumulate
+[xUnit.net 00:00:02.9867566]   Discovered:  Accumulate
+[xUnit.net 00:00:03.0195779]   Starting:    Accumulate
+[xUnit.net 00:00:04.5195534]   Finished:    Accumulate
+
+Total tests: 6. Passed: 6. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 8.1234 Seconds
