@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\perfect-numbers\bin\Debug\netcoreapp2.0\PerfectNumbers.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.5.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:00.8647243]   Discovering: PerfectNumbers
+[xUnit.net 00:00:01.0394842]   Discovered:  PerfectNumbers
+[xUnit.net 00:00:01.0534605]   Starting:    PerfectNumbers
+[xUnit.net 00:00:09.5877397]   Finished:    PerfectNumbers
+
+Total tests: 13. Passed: 13. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 10.7936 Seconds
