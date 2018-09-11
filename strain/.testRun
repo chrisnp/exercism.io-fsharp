@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\strain\bin\Debug\netcoreapp2.0\Strain.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.5.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:03.2858138]   Discovering: Strain
+[xUnit.net 00:00:03.7471240]   Discovered:  Strain
+[xUnit.net 00:00:03.7890972]   Starting:    Strain
+[xUnit.net 00:00:06.2607127]   Finished:    Strain
+
+Total tests: 12. Passed: 12. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 10.1167 Seconds
