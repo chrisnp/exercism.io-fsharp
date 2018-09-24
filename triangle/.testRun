@@ -14,3 +14,22 @@ Starting test execution, please wait...
 Total tests: 17. Passed: 17. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 10.4352 Seconds
+
+
+
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\triangle\bin\Debug\netcoreapp2.0\Triangle.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.5.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:01.0213781]   Discovering: Triangle
+[xUnit.net 00:00:01.1174730]   Discovered:  Triangle
+[xUnit.net 00:00:01.1267889]   Starting:    Triangle
+[xUnit.net 00:00:01.7332424]   Finished:    Triangle
+
+Total tests: 19. Passed: 19. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 2.9954 Seconds

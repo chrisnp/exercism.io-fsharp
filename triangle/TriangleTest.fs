@@ -75,3 +75,11 @@ let ``Sides that violate triangle inequality are not scalene, even if they are a
 let ``Scalene returns sides may be floats`` () =
     scalene [0.5; 0.4; 0.6] |> should equal true
 
+[<Fact>]
+let ``Scalene returns false if it is a _degenerate_ triangle even if no sides are equal`` () =
+    scalene [2.0; 3.0; 5.0] |> should equal false
+
+[<Fact>]
+let ``Isosceles returns false if it is a _degenerate_ triangle even if two sides are equal`` () =
+    isosceles [3.0; 3.0; 6.0] |> should equal false
+
