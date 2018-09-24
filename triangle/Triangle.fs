@@ -2,11 +2,14 @@
 
 
 let private isATriangle triangle =
+    let [a; b; c] = triangle
     let nonZero = List.sum triangle <> 0.0
     let inequality =
-        let [a; b; c] = triangle
         a + b >= c && a + c >= b && b + c >= a
-    inequality && nonZero
+    let degenerate = 
+        a + b = c || a + c = b || b + c = a
+    nonZero && not degenerate && inequality
+
 
 let private distinctSides triangle = triangle |> List.distinct |> List.length
 
