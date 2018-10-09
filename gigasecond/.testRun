@@ -1,0 +1,16 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\gigasecond\bin\Debug\netcoreapp2.0\Gigasecond.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.6.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:04.9445388]   Discovering: Gigasecond
+[xUnit.net 00:00:05.3795410]   Discovered:  Gigasecond
+[xUnit.net 00:00:05.4113824]   Starting:    Gigasecond
+[xUnit.net 00:00:06.7344706]   Finished:    Gigasecond
+
+Total tests: 5. Passed: 5. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 10.8819 Seconds
