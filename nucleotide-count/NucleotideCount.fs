@@ -12,7 +12,7 @@ let private initMap =
 let update f (map:Map<char,int>) k = Map.add (valid k) (f map.[k]) map
 let nucleotideCounts (strand: string): Option<Map<char, int>> =  
     match Seq.forall (fun nuc -> valid nuc) strand with
-    | true -> (Seq.fold (update ((+) 1)) initMap strand) >> Some)
+    | true -> (Seq.fold (update ((+) 1)) init strand) >> Some
     | false -> None
 
     List.map (fun nuc -> (nuc, count nuc strand)) ['A';'C';'G';'T'] 
