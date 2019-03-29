@@ -220,7 +220,6 @@ ClientBin/
 *.pfx
 *.publishsettings
 orleans.codegen.cs
-# .solution.json
 /../solution.json
 cleanup.ps1
 
