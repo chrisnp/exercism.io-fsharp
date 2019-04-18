@@ -10,3 +10,19 @@ Starting test execution, please wait...
 Total tests: 5. Passed: 5. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 3.4175 Seconds
+
+
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\sieve\bin\Debug\netcoreapp2\Sieve.dll(.NETCoreApp,Version=v2.0)
+Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+Total tests: 5. Passed: 5. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 5.3798 Seconds
+
+
