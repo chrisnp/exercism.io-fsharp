@@ -1,25 +1,19 @@
 ﻿module Sieve
 
 open System
-open System.Collections
+open System.Collections.Generic
 
-let sieve limit = 
-    let primeSieve = Array.create limit true
-    let maxp = sqrt (float (limit)) |> int
-    primeSieve.[0] <- false
-    primeSieve.[1] <- false
-    primeSieve.[2] <- true
-    for p in 2..(maxp + 1) do
-        if primeSieve.[p] then
-            for pm in (p * 2)..p..(limit) do
-                primeSieve.[pm] <- false
-    primeSieve
+let rec sieve limit = seq {
+        yield 2
+        let composites = new HashSet<int>()
+        for i in 3..2..limit do
+            let found = composites.Contains(i)
+            if not found then
+                yield i
+            do for j in i..i..limit do
+                composites.Add(j) |> ignore
+}
 
 let primes limit = match limit with
                    | 0 | 1 -> []
-                   | _ -> sieve limit
-                          |> Seq.mapi (fun i v -> v, i)
-                          |> Seq.filter fst
-                          |> Seq.map snd
-                          |> Seq.toList
-
+                   | _ -> sieve limit |> Seq.toList
