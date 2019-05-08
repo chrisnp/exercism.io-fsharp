@@ -1,0 +1,12 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\error-handling\bin\Debug\netcoreapp2.1\ErrorHandling.dll(.NETCoreApp,Version=v2.1)
+Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+Total tests: 5. Passed: 5. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 3.6740 Seconds
