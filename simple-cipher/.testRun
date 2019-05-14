@@ -1,0 +1,13 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\simple-cipher\bin\Debug\netcoreapp2.1\SimpleCipher.dll(.NETCoreApp,Version=v2.1)
+Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+Total tests: 11. Passed: 11. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 1.8072 Seconds
+
