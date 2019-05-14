@@ -10,7 +10,6 @@ let private xShift (input:string) (key:string) (sign:int) =
     input 
     |> Seq.zip ( seq{ while true do for i in key -> i } )
     |> Seq.map (fun (k, c) -> ((c |> charToIndex) + sign * (k |> charToIndex)) |> mod26 |> indexToChar)
-    |> Seq.toArray
     |> String.Concat
 
 type SimpleCipher(key: string) =
