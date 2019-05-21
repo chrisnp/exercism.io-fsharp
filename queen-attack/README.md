@@ -9,7 +9,7 @@ row, column, or diagonal.
 A chessboard can be represented by an 8 by 8 array.
 
 So if you're told the white queen is at (2, 3) and the black queen at
-(6, 7), then you'd know you've got a set-up like so:
+(5, 6), then you'd know you've got a set-up like so:
 
 ```text
 _ _ _ _ _ _ _ _
@@ -17,8 +17,8 @@ _ _ _ _ _ _ _ _
 _ _ _ W _ _ _ _
 _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _
+_ _ _ _ _ _ B _
 _ _ _ _ _ _ _ _
-_ _ _ _ _ _ _ B
 _ _ _ _ _ _ _ _
 ```
 
@@ -39,5 +39,3 @@ you're having trouble, please visit the exercism.io [F# language page](http://ex
 
 J Dalbey's Programming Practice problems [http://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html](http://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html)
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
