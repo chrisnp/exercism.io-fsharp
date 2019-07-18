@@ -11,14 +11,14 @@ let rebase digits inputBase outputBase =
     let degenerate =
         digits |> List.forall(fun x -> x = 0)
 
-    let numberIn (newBase : int) (digits : int list) = 
-        let len = digits.Length
-        digits 
+    let numberIn newBase fromDigits = 
+        let len = (fromDigits : int list).Length
+        fromDigits 
         |> List.mapi (fun p d -> d * int(double(newBase) ** double(len - 1 - p)))
         |> List.sum
 
-    let digitsIn (newBase : int) (number : int) = 
-        number
+    let digitsIn newBase fromNumber = 
+        fromNumber
         |> List.unfold (fun x -> 
                             if x = 0 then 
                                 None 
@@ -31,7 +31,4 @@ let rebase digits inputBase outputBase =
     elif degenerate then 
         Some[0]
     else
-        digits 
-        |> numberIn inputBase
-        |> digitsIn outputBase
-        |> Some
+        Some (digits |> numberIn inputBase |> digitsIn outputBase)
