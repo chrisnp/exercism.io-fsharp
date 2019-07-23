@@ -10,3 +10,17 @@ Starting test execution, please wait...
 Total tests: 21. Passed: 21. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 1.8800 Seconds
+
+
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\list-ops\bin\Debug\netcoreapp2.1\ListOps.dll(.NETCoreApp,Version=v2.1)
+Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+Total tests: 21. Passed: 21. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 1.8871 Seconds
