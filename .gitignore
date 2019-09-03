@@ -222,6 +222,7 @@ ClientBin/
 orleans.codegen.cs
 /../solution.json
 cleanup.ps1
+cleanup.sh
 .ionide/
 
 # Including strong name files can present a security risk 
