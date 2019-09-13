@@ -21,4 +21,7 @@ let create items =
     |> List.fold (fun node data -> insert data node) None
     |> Option.get
 
-let sortedData node = failwith "You need to implement this function."
+let rec sortedData node = 
+    match node with
+    | {left = None; data = 0; right = None} -> []
+    | {left = Some (_); data = _; right = Some (_)} = sortedData left @ [data] @ sortedData right
