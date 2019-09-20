@@ -23,5 +23,5 @@ let create items =
 
 let rec sortedData node = 
     match node with
-    | {left = None; data = 0; right = None} -> []
-    | {left = Some (_); data = _; right = Some (_)} = sortedData left @ [data] @ sortedData right
+    | Empty -> []
+    | {left = Some(_); data = _; right = Some(_)} = sortedData left @ [data] @ sortedData right
