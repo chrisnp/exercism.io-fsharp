@@ -1,0 +1,12 @@
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\binary-search-tree\bin\Debug\netcoreapp2.1\BinarySearchTree.dll(.NETCoreApp,Version=v2.1)
+Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+Total tests: 10. Passed: 10. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 2.0096 Seconds
