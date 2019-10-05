@@ -1,27 +1,27 @@
 ﻿module BinarySearchTree
 
 type Node = { left : Node option; data : int; right : Node option }
-    // Data of int * Node option * Node option 
-
+    
 let left node  = node.left
 
 let right node = node.right
 
 let data node = node.data
 
-let rec private insert value (tree : Node) = 
-    function
-    | None   -> Some <| { left = None; data = value; right = None }
-    | Some(tree) when value <= tree.data -> 
-        Some <| { tree with left  = insert value tree.left }
-    | Some(tree) -> Some <| { tree with right = insert value tree.right)} 
-
 let create items = 
-    items
-    |> List.fold (fun node data -> insert data node) None
-    |> Option.get
+    let rec insert items =
+        match items with 
+        | [] -> None
+        | x::xs -> 
+                Some { left  = xs |> List.filter(fun y -> y <= x) |> insert;
+                       data  = x;
+                       right = xs |> List.filter(fun y -> y >  x) |> insert }
+    match insert items with 
+    | None -> failwith "" 
+    | Some node -> node
 
 let rec sortedData node = 
-    match node with
-    | {left = None; data = 0; right = None} -> []
-    | {left = Some (_); data = _; right = Some (_)} = sortedData left @ [data] @ sortedData right
+    let rec sort node = match node with
+                        | None -> []
+                        | Some x -> sort x.left @ [x.data] @ sort x.right
+    node |> Some |> sort
