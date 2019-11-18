@@ -5,8 +5,6 @@ let slices (str : string) (length : int) =
     then 
         None
     else
-        str
-        |> Seq.windowed length
-        |> (Seq.map <| System.String)
-        |> Seq.toList
-        |> Some        
+        Some (str |> Seq.windowed length
+                  |> (Seq.map <| System.String)
+                  |> Seq.toList)
