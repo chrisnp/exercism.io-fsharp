@@ -10,3 +10,18 @@ Starting test execution, please wait...
 Total tests: 19. Passed: 19. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 2.0062 Seconds
+
+
+
+Build started, please wait...
+Build completed.
+
+Test run for ~\exercism\fsharp\roman-numerals\bin\Debug\netcoreapp2.1\RomanNumerals.dll(.NETCoreApp,Version=v2.1)
+Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+Total tests: 19. Passed: 19. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 2.0386 Seconds
