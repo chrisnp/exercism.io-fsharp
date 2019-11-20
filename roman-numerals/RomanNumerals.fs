@@ -17,7 +17,9 @@ let romanNumerals = [ ("M", 1000);
 let roman arabicNumeral = 
     let rec roman (acc, num) (symbol, value) = 
         if (num < value) then 
-            (acc, num) 
+            (acc, num)
         else 
             roman (acc + symbol, num - value) (symbol, value)
-    List.fold roman ("", arabicNumeral) romanNumerals |> fst
+    romanNumerals
+    |> List.fold roman ("", arabicNumeral) 
+    |> fst
