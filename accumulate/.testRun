@@ -20,7 +20,7 @@ Test execution time: 8.1234 Seconds
 Build started, please wait...
 Build completed.
 
-Test run for C:\Users\Chris\exercism\fsharp\accumulate\bin\Debug\netcoreapp2.1\Accumulate.dll(.NETCoreApp,Version=v2.1)
+Test run for ~\exercism\fsharp\accumulate\bin\Debug\netcoreapp2.1\Accumulate.dll(.NETCoreApp,Version=v2.1)
 Microsoft (R) Test Execution Command Line Tool Version 15.8.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
@@ -29,3 +29,18 @@ Starting test execution, please wait...
 Total tests: 7. Passed: 7. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 4.5598 Seconds
+
+
+
+Test run for ~s\exercism\fsharp\accumulate\bin\Debug\netcoreapp3.1\Accumulate.dll(.NETCoreApp,Version=v3.1)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 7
+     Passed: 7
+ Total time: 1.7134 Seconds
