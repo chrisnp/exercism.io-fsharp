@@ -1,6 +1,5 @@
 ﻿module QueenAttack
 
-
 let create (position: int * int) = 
     let (x, y) = position
     let onChessBoard z = z >= 0 && z < 8
