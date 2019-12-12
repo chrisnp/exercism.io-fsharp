@@ -10,3 +10,18 @@ Starting test execution, please wait...
 Total tests: 4. Passed: 4. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 1.8769 Seconds
+
+
+
+Test run for C:\Users\Chris\exercism\fsharp\etl\bin\Debug\netcoreapp3.0\Etl.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 4
+     Passed: 4
+ Total time: 4.1408 Seconds
