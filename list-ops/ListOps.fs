@@ -1,5 +1,6 @@
 ﻿module ListOps
 
+// Auxiliary
 let inline (><) f x y = f y x 
 
 let rec foldl folder state list = 
@@ -7,6 +8,7 @@ let rec foldl folder state list =
    | [] -> state
    | x::xs -> foldl folder (folder state x) xs
 
+// API
 let length list = 
    foldl (fun state x -> state + 1) 0 list
 
