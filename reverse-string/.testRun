@@ -17,7 +17,7 @@ Test execution time: 8.9061 Seconds
 
 
 
-Test run for C:\Users\Chris\exercism\fsharp\reverse-string\bin\Debug\netcoreapp3.0\ReverseString.dll(.NETCoreApp,Version=v3.0)
+Test run for ~\exercism\fsharp\reverse-string\bin\Debug\netcoreapp3.0\ReverseString.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
@@ -29,3 +29,18 @@ Test Run Successful.
 Total tests: 6
      Passed: 6
  Total time: 2.6070 Seconds
+
+
+
+Test run for ~\exercism\fsharp\reverse-string\bin\Debug\netcoreapp3.0\ReverseString.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 6
+     Passed: 6
+ Total time: 5.6310 Seconds
