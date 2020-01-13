@@ -1,6 +1,8 @@
 ﻿module ReverseString
 
 let reverse (input: string): string = 
-    input |> Seq.rev 
-          |> Seq.toArray 
-          |> System.String
+    let flip f a b = f b a
+    input 
+    |> Seq.fold (flip (fun x y -> x :: y)) []
+    |> Seq.toArray
+    |> System.String
