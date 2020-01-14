@@ -1,9 +1,9 @@
 {
-    "track":"fsharp",
-    "exercise":"simple-cipher",
-    "id":"f21cbf693b324eb1971cef971483c08b",
-    "url":"https://exercism.io/tracks/fsharp/exercises/simple-cipher/solutions/f21cbf693b324eb1971cef971483c08b",
-    "handle":"heptalophos",
-    "is_requester":true,
-    "auto_approve":false
+  "track": "fsharp",
+  "exercise": "simple-cipher",
+  "id": "f21cbf693b324eb1971cef971483c08b",
+  "url": "https://exercism.io/tracks/fsharp/exercises/simple-cipher/solutions/f21cbf693b324eb1971cef971483c08b",
+  "handle": "heptalophos",
+  "is_requester": true,
+  "auto_approve": false
 }
