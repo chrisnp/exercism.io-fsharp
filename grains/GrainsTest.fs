@@ -1,4 +1,4 @@
-// This file was auto-generated based on version 1.1.0 of the canonical data.
+// This file was auto-generated based on version 1.2.0 of the canonical data.
 
 module GrainsTest
 
@@ -6,11 +6,6 @@ open FsUnit.Xunit
 open Xunit
 
 open Grains
-
-[<Fact>]
-let ``Returns the total number of grains on the board`` () =
-    let expected: Result<uint64,string> = Ok 18446744073709551615UL
-    total |> should equal expected
 
 [<Fact>]
 let ``1`` () =
@@ -49,16 +44,21 @@ let ``64`` () =
 
 [<Fact>]
 let ``Square 0 raises an exception`` () =
-    let expected: Result<uint64,string> = Error "Invalid input"
+    let expected: Result<uint64,string> = Error "square must be between 1 and 64"
     square 0 |> should equal expected
 
 [<Fact>]
 let ``Negative square raises an exception`` () =
-    let expected: Result<uint64,string> = Error "Invalid input"
+    let expected: Result<uint64,string> = Error "square must be between 1 and 64"
     square -1 |> should equal expected
 
 [<Fact>]
 let ``Square greater than 64 raises an exception`` () =
-    let expected: Result<uint64,string> = Error "Invalid input"
+    let expected: Result<uint64,string> = Error "square must be between 1 and 64"
     square 65 |> should equal expected
+
+[<Fact>]
+let ``Returns the total number of grains on the board`` () =
+    let expected: Result<uint64,string> = Ok 18446744073709551615UL
+    total |> should equal expected
 
