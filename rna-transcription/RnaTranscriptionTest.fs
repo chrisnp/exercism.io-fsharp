@@ -1,4 +1,4 @@
-// This file was auto-generated based on version 1.2.0 of the canonical data.
+// This file was auto-generated based on version 1.3.0 of the canonical data.
 
 module RnaTranscriptionTest
 
@@ -6,6 +6,10 @@ open FsUnit.Xunit
 open Xunit
 
 open RnaTranscription
+
+[<Fact>]
+let ``Empty RNA sequence`` () =
+    toRna "" |> should equal ""
 
 [<Fact>]
 let ``RNA complement of cytosine is guanine`` () =
