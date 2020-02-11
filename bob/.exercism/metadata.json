@@ -1,9 +1,9 @@
 {
-    "track": "fsharp",
-    "exercise": "bob",
-    "id": "e72d1a1886bd4c6ba6bca400321bac04",
-    "url": "https://exercism.io/tracks/fsharp/exercises/bob/solutions/e72d1a1886bd4c6ba6bca400321bac04",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
+  "track": "fsharp",
+  "exercise": "bob",
+  "id": "e72d1a1886bd4c6ba6bca400321bac04",
+  "url": "https://exercism.io/tracks/fsharp/exercises/bob/solutions/e72d1a1886bd4c6ba6bca400321bac04",
+  "handle": "heptalophos",
+  "is_requester": true,
+  "auto_approve": false
 }

@@ -1,4 +1,4 @@
-// This file was auto-generated based on version 1.2.0 of the canonical data.
+// This file was auto-generated based on version 1.6.0 of the canonical data.
 
 module BobTest
 
@@ -33,26 +33,26 @@ let ``Asking gibberish`` () =
 
 [<Fact>]
 let ``Talking forcefully`` () =
-    response "Let's go make out behind the gym!" |> should equal "Whatever."
+    response "Hi there!" |> should equal "Whatever."
 
 [<Fact>]
 let ``Using acronyms in regular speech`` () =
-    response "It's OK if you don't want to go to the DMV." |> should equal "Whatever."
+    response "It's OK if you don't want to go work for NASA." |> should equal "Whatever."
 
 [<Fact>]
 let ``Forceful question`` () =
-    response "WHAT THE HELL WERE YOU THINKING?" |> should equal "Calm down, I know what I'm doing!"
+    response "WHAT'S GOING ON?" |> should equal "Calm down, I know what I'm doing!"
 
 [<Fact>]
 let ``Shouting numbers`` () =
     response "1, 2, 3 GO!" |> should equal "Whoa, chill out!"
 
 [<Fact>]
-let ``Only numbers`` () =
+let ``No letters`` () =
     response "1, 2, 3" |> should equal "Whatever."
 
 [<Fact>]
-let ``Question with only numbers`` () =
+let ``Question with no letters`` () =
     response "4?" |> should equal "Sure."
 
 [<Fact>]
@@ -61,7 +61,7 @@ let ``Shouting with special characters`` () =
 
 [<Fact>]
 let ``Shouting with no exclamation mark`` () =
-    response "I HATE YOU" |> should equal "Whoa, chill out!"
+    response "I HATE THE DENTIST" |> should equal "Whoa, chill out!"
 
 [<Fact>]
 let ``Statement containing question mark`` () =
@@ -89,7 +89,7 @@ let ``Alternate silence`` () =
 
 [<Fact>]
 let ``Multiple line question`` () =
-    response "\nDoes this cryogenic chamber make me look fat?\nno" |> should equal "Whatever."
+    response "\nDoes this cryogenic chamber make me look fat?\nNo." |> should equal "Whatever."
 
 [<Fact>]
 let ``Starting with whitespace`` () =
