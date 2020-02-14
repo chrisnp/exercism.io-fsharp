@@ -1,7 +1,8 @@
 Build started, please wait...
 Build completed.
 
-Test run for ~\exercism\fsharp\grade-school\bin\Debug\netcoreapp2.0\GradeSchool.dll(.NETCoreApp,Version=v2.0)
+Test run for 
+    ~\exercism\fsharp\grade-school\bin\Debug\netcoreapp2.0\GradeSchool.dll(.NETCoreApp,Version=v2.0)
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
@@ -16,6 +17,8 @@ Test Run Successful.
 Test execution time: 12.7901 Seconds
 
 
+
+> dotnet test
 
 Test run for 
     ~\exercism\fsharp\grade-school\bin\Debug\netcoreapp3.0\GradeSchool.dll(.NETCoreApp,Version=v3.0)

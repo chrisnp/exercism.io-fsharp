@@ -7,7 +7,7 @@ let find input value =
         else
             let mid = (low + high) / 2
             match input |> Array.get <| mid with
-                | x when x > value -> search low (mid - 1)
-                | x when x < value -> search (mid + 1) high
-                | _ ->  Some mid
+            | x when x > value -> search low (mid - 1)
+            | x when x < value -> search (mid + 1) high
+            | _ ->  Some mid
     search 0 ((input |> Array.length) - 1)
