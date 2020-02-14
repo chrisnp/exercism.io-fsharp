@@ -1,9 +1,9 @@
 {
-    "track":"fsharp",
-    "exercise":"binary-search",
-    "id":"cb3b605e74db41568d6274afcc2241df",
-    "url":"https://exercism.io/tracks/fsharp/exercises/binary-search/solutions/cb3b605e74db41568d6274afcc2241df",
-    "handle":"heptalophos",
-    "is_requester":true,
-    "auto_approve":false
+  "track": "fsharp",
+  "exercise": "binary-search",
+  "id": "cb3b605e74db41568d6274afcc2241df",
+  "url": "https://exercism.io/tracks/fsharp/exercises/binary-search/solutions/cb3b605e74db41568d6274afcc2241df",
+  "handle": "heptalophos",
+  "is_requester": true,
+  "auto_approve": false
 }
