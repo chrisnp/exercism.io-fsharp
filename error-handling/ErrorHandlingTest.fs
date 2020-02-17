@@ -31,7 +31,7 @@ let ``Throwing exception`` () =
 // consider both possible outputs: success and failure.
 [<Fact>]
 let ``Returning Option<'T>`` () =
-    let successResult = handleErrorByReturningOption "1" 
+    let successResult = handleErrorByReturningOption "1"
     successResult |> should equal <| Some 1
     
     let failureResult = handleErrorByReturningOption "a"
