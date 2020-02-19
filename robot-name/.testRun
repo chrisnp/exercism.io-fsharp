@@ -14,3 +14,20 @@ Starting test execution, please wait...
 Total tests: 4. Passed: 4. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 1.7270 Seconds
+
+
+
+>dotnet test
+
+Test run for ~\exercism\fsharp\robot-name\bin\Debug\netcoreapp3.0\RobotName.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 4
+     Passed: 4
+ Total time: 2.8041 Seconds
