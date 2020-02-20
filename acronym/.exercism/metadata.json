@@ -1,9 +1,9 @@
 {
-    "track": "fsharp",
-    "exercise": "acronym",
-    "id": "c42502ffcb4449698edc92817e10b73d",
-    "url": "https://exercism.io/tracks/fsharp/exercises/acronym/solutions/c42502ffcb4449698edc92817e10b73d",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
+  "track": "fsharp",
+  "exercise": "acronym",
+  "id": "c42502ffcb4449698edc92817e10b73d",
+  "url": "https://exercism.io/tracks/fsharp/exercises/acronym/solutions/c42502ffcb4449698edc92817e10b73d",
+  "handle": "heptalophos",
+  "is_requester": true,
+  "auto_approve": false
 }
