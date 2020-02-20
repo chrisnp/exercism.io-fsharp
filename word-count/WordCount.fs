@@ -2,6 +2,7 @@
 
 open System 
 
+
 let countWords (phrase: string) = 
     let allowed (ch: char) =
         ch |> Char.IsDigit 
