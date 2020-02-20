@@ -10,3 +10,21 @@ Starting test execution, please wait...
 Total tests: 12. Passed: 12. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 8.9255 Seconds
+
+
+
+
+>dotnet test
+
+Test run for ~\exercism\fsharp\word-count\bin\Debug\netcoreapp3.0\WordCount.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 13
+     Passed: 13
+ Total time: 2.6925 Seconds
