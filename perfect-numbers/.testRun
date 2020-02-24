@@ -19,7 +19,7 @@ Test execution time: 10.7936 Seconds
 
 >dotnet test
 
-Test run for C:\Users\Chris\exercism\fsharp\perfect-numbers\bin\Debug\netcoreapp2.0\PerfectNumbers.dll(.NETCoreApp,Version=v2.0)
+Test run for ~\exercism\fsharp\perfect-numbers\bin\Debug\netcoreapp2.0\PerfectNumbers.dll(.NETCoreApp,Version=v2.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
