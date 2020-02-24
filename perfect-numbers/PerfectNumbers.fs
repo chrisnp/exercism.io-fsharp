@@ -1,12 +1,24 @@
 ﻿module PerfectNumbers
 
-type Classification = Perfect | Abundant | Deficient 
+open System 
+
+
+type Classification = Perfect 
+                      | Abundant 
+                      | Deficient 
 
 let classify n : Classification option = 
-    if n <= 0 then None
-    else
-        let aliquotSum = [1 .. n/2] |> List.filter (fun i -> n % i = 0) |> List.sum 
-        match aliquotSum with 
-        | _ when aliquotSum < n -> Some Classification.Deficient
-        | _ when aliquotSum > n -> Some Classification.Abundant
-        | _ -> Some Classification.Perfect
+    let aliquotSum = 
+        [1..n/2]
+        |> Seq.filter ((%) n >> (=) 0)
+        |> Seq.sum
+    if n < 1 then 
+        None
+    else 
+        match aliquotSum with
+        | _ when aliquotSum = n -> 
+            Some Perfect
+        | _ when aliquotSum > n -> 
+            Some Abundant
+        | _ -> 
+            Some Deficient
