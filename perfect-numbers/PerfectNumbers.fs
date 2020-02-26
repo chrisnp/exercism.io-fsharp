@@ -2,7 +2,6 @@
 
 open System 
 
-
 type Classification = Perfect 
                       | Abundant 
                       | Deficient 
@@ -10,7 +9,7 @@ type Classification = Perfect
 let classify n : Classification option = 
     let aliquotSum = 
         [1..n/2]
-        |> Seq.filter ((%) n >> (=) 0)
+        |> Seq.filter ((=) 0 << (%) n) 
         |> Seq.sum
     if n < 1 then 
         None
