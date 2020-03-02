@@ -13,9 +13,10 @@ Test execution time: 3.5680 Seconds
 
 
 
+
 > dotnet test
 
-Test run for ~\exercism\fsharp\nucleotide-count\bin\Debug\netcoreapp2.1\NucleotideCount.dll(.NETCoreApp,Version=v2.1)
+Test run for ~\exercism\fsharp\nucleotide-count\bin\Debug\netcoreapp3.0\NucleotideCount.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
@@ -26,4 +27,4 @@ A total of 1 test files matched the specified pattern.
 Test Run Successful.
 Total tests: 5
      Passed: 5
- Total time: 1.9723 Seconds
+ Total time: 1.7730 Seconds
