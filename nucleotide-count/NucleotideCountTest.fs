@@ -57,7 +57,7 @@ let ``Strand with multiple nucleotides`` () =
 
 [<Fact>]
 let ``Strand with invalid nucleotides`` () =
-    let strand = "AGYXACT"
+    let strand = "AGXXACT"
     let expected = None
     nucleotideCounts strand |> should equal expected
 
