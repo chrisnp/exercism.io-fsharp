@@ -65,3 +65,20 @@ Test Run Successful.
 Total tests: 25
      Passed: 25
  Total time: 1.5725 Seconds
+
+
+
+>dotnet test
+
+Test run for ~\exercism\fsharp\bob\bin\Debug\netcoreapp3.0\Bob.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 25
+     Passed: 25
+ Total time: 3.3404 Seconds

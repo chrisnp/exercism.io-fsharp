@@ -48,3 +48,20 @@ Test Run Successful.
 Total tests: 19
      Passed: 19
  Total time: 4.5621 Seconds
+
+
+
+>dotnet test
+
+Test run for ~\exercism\fsharp\triangle\bin\Debug\netcoreapp3.0\Triangle.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 19
+     Passed: 19
+ Total time: 9.1084 Seconds
