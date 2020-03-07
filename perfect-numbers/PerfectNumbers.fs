@@ -2,6 +2,7 @@
 
 open System 
 
+
 type Classification = Perfect 
                       | Abundant 
                       | Deficient 
