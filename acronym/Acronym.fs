@@ -7,6 +7,5 @@ let abbreviate (phrase : string) =
                  StringSplitOptions.RemoveEmptyEntries)
     |> Seq.map  (Char.ToUpper << Seq.head)
     |> Seq.fold (fun acro char -> 
-                        acro + (char |> string)) 
-                ""
+                            acro + (char |> string)) ""
     
