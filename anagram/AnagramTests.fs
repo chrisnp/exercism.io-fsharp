@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 1.5.0 of the canonical data.
 
-module AnagramTest
+module AnagramTests
 
 open FsUnit.Xunit
 open Xunit
