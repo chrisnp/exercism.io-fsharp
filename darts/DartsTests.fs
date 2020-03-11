@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 2.2.0 of the canonical data.
 
-module DartsTest
+module DartsTests
 
 open FsUnit.Xunit
 open Xunit
