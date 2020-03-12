@@ -25,3 +25,20 @@ Test Run Successful.
 Total tests: 11
      Passed: 11
  Total time: 1.9925 Seconds
+
+
+
+>dotnet test
+
+Test run for C:\Users\Chris\exercism\fsharp\binary-search\bin\Debug\netcoreapp3.0\BinarySearch.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 11
+     Passed: 11
+ Total time: 2.5999 Seconds
