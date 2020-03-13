@@ -32,7 +32,7 @@ Total tests: 14
 
 >dotnet test
 
-Test run for C:\Users\Chris\exercism\fsharp\anagram\bin\Debug\netcoreapp3.0\Anagram.dll(.NETCoreApp,Version=v3.0)
+Test run for ~\exercism\fsharp\anagram\bin\Debug\netcoreapp3.0\Anagram.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 

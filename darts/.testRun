@@ -31,7 +31,7 @@ Total tests: 13
 
 >dotnet test
 
-Test run for C:\Users\Chris\exercism\fsharp\darts\bin\Debug\netcoreapp3.0\Darts.dll(.NETCoreApp,Version=v3.0)
+Test run for ~\exercism\fsharp\darts\bin\Debug\netcoreapp3.0\Darts.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
