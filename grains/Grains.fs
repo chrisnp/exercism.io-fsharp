@@ -8,7 +8,8 @@ let square (n: int): Result<uint64, string> =
         | _ when n <= 0 || n > 64 -> 
             Error "square must be between 1 and 64"
         | _ ->  
-            (2I ** (n - 1) |> uint64) |> Ok
+            (2I ** (n - 1) |> uint64) 
+            |> Ok
 
 let total: Result<uint64, string> = 
     [| 1..64 |] 
