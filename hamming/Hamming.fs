@@ -1,8 +1,8 @@
 ﻿module Hamming
 
-let distance (strand1: string) (strand2: string): int option = 
-    if (strand1.Length = strand2.Length) then
-        Seq.zip strand1 strand2
+let distance (s1: string) (s2: string): int option = 
+    if (s1.Length = s2.Length) then
+        Seq.zip s1 s2
         |> Seq.filter (fun (x, y) -> x <> y)
         |> Seq.length
         |> Some

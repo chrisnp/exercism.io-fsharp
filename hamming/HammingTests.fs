@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 2.3.0 of the canonical data.
 
-module HammingTest
+module HammingTests
 
 open FsUnit.Xunit
 open Xunit
