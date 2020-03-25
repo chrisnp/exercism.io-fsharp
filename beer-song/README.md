@@ -328,12 +328,6 @@ experiment make the code better? Worse? Did you learn anything from it?
 
 To run the tests, run the command `dotnet test` from within the exercise directory.
 
-## Autoformatting the code
-
-F# source code can be formatted with the [Fantomas](https://github.com/fsprojects/fantomas) tool.
-
-After installing it with `dotnet tool restore`, run `dotnet fantomas .` to format code within the current directory.
-
 ## Further information
 
 For more detailed information about the F# track, including how to get help if
@@ -343,3 +337,5 @@ you're having trouble, please visit the exercism.io [F# language page](http://ex
 
 Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
 
+## Submitting Incomplete Solutions
+It's possible to submit an incomplete solution so you can see how others have completed the exercise.
