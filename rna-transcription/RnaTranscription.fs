@@ -7,4 +7,5 @@ let toRna (dna: string): string =
                        | 'C' -> 'G'
                        | 'T' -> 'A'
                        | 'A' -> 'U'
-                       | _ -> failwith "Invalid nucleotide")
+                       | _ -> 
+                            failwith "Invalid nucleotide")
