@@ -14,3 +14,20 @@ Starting test execution, please wait...
 Total tests: 8. Passed: 8. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 3.1423 Seconds
+
+
+
+>dotnet test
+
+Test run for ~\exercism\fsharp\beer-song\bin\Debug\netcoreapp3.0\BeerSong.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 8
+     Passed: 8
+ Total time: 3.5267 Seconds
