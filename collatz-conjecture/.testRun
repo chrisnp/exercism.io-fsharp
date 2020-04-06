@@ -48,3 +48,20 @@ Test Run Successful.
 Total tests: 6
      Passed: 6
  Total time: 2.2145 Seconds
+
+
+
+>dotnet test
+
+Test run for ~\exercism\fsharp\collatz-conjecture\bin\Debug\netcoreapp3.0\CollatzConjecture.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 6
+     Passed: 6
+ Total time: 3.6016 Seconds
