@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 1.2.1 of the canonical data.
 
-module CollatzConjectureTest
+module CollatzConjectureTests
 
 open FsUnit.Xunit
 open Xunit
