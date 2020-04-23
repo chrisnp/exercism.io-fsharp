@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 1.0.0 of the canonical data.
 
-module BinarySearchTreeTest
+module BinarySearchTreeTests
 
 open FsUnit.Xunit
 open Xunit
