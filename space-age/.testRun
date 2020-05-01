@@ -31,3 +31,20 @@ Test Run Successful.
 Total tests: 8
      Passed: 8
  Total time: 2.6830 Seconds
+
+
+
+>dotnet test
+
+Test run for ~\exercism\fsharp\space-age\bin\Debug\netcoreapp3.0\SpaceAge.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 8
+     Passed: 8
+ Total time: 3.6594 Seconds
