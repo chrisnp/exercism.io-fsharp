@@ -18,12 +18,14 @@ let create items =
         | x::xs -> 
             Some { left  = 
                     xs 
-                    |> List.filter(fun y -> y <= x) 
+                    |> List.filter(fun y -> 
+                                    y <= x) 
                     |> insert;
                    data  = x;
                    right = 
                     xs 
-                    |> List.filter(fun y -> y >  x) 
+                    |> List.filter(fun y -> 
+                                    y >  x) 
                     |> insert }
     match insert items with 
     | None -> failwith "" 
@@ -35,7 +37,9 @@ let rec sortedData node =
             | None -> 
                 []
             | Some x -> 
-                sort x.left @ [x.data] @ sort x.right
+                sort x.left @ 
+                [x.data] @ 
+                sort x.right
     node 
     |> Some 
     |> sort
