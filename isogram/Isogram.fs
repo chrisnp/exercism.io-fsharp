@@ -6,6 +6,6 @@ let isIsogram (str : string) =
     let normalized = 
         str.ToLowerInvariant() 
         |> Seq.filter Char.IsLetterOrDigit 
-    normalized
-    |> Set.ofSeq 
-    |> Set.count = Seq.length normalized       
+    normalized |> Set.ofSeq 
+               |> Set.count = 
+                  Seq.length normalized       
