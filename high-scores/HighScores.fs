@@ -18,4 +18,5 @@ let report (values: int list): string =
         if diff = 0 then " " 
         else sprintf " %i short of " diff)
     ||> 
-    sprintf "Your latest score was %i. That's%syour personal best!"
+    sprintf "Your latest score was %i.
+             That's%syour personal best!"
