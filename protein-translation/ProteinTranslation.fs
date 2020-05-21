@@ -2,7 +2,7 @@
 
 open System
 
-let translateCodon = function
+let decodeCodon = function
   | "AUG" -> 
       "Methionine"
   | "UUU" | "UUC" -> 
@@ -27,5 +27,5 @@ let proteins rna =
     rna 
     |> Seq.chunkBySize 3 
     |> List.ofSeq 
-    |> List.map (String >> translateCodon) 
+    |> List.map (String >> decodeCodon) 
     |> List.takeWhile (not << stopped) 

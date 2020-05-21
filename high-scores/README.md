@@ -15,11 +15,9 @@ F# source code can be formatted with the [Fantomas](https://github.com/fsproject
 After installing it with `dotnet tool restore`, run `dotnet fantomas .` to format code within the current directory.
 
 ## Further information
-
 For more detailed information about the F# track, including how to get help if
 you're having trouble, please visit the exercism.io [F# language page](http://exercism.io/languages/fsharp/resources).
 
 ## Source
-
 Tribute to the eighties' arcade game Frogger
 

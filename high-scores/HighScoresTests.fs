@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 4.0.0 of the canonical data.
 
-module HighScoresTest
+module HighScoresTests
 
 open FsUnit.Xunit
 open Xunit

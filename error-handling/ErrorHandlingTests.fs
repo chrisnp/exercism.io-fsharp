@@ -8,6 +8,7 @@ open System
 
 open ErrorHandling
 
+
 // Custom class that implements IDisposable
 type Resource() = 
     let mutable disposed = false
@@ -17,6 +18,7 @@ type Resource() =
     interface System.IDisposable with
         member this.Dispose() =
             disposed <- true
+
 
 // Throwing exceptions is not the preferred approach to handling errors in F#, 
 // but it becomes relevant when you use .NET framework methods from your F# code

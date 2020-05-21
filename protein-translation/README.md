@@ -27,7 +27,7 @@ Protein: `"Methionine", "Phenylalanine", "Serine"`
 Note the stop codon `"UAA"` terminates the translation and the final methionine is not translated into the protein sequence.
 
 Below are the codons and resulting Amino Acids needed for the exercise.
-
+```
 Codon                 | Protein
 :---                  | :---
 AUG                   | Methionine
@@ -38,25 +38,21 @@ UAU, UAC              | Tyrosine
 UGU, UGC              | Cysteine
 UGG                   | Tryptophan
 UAA, UAG, UGA         | STOP
+```
 
 Learn more about [protein translation on Wikipedia](http://en.wikipedia.org/wiki/Translation_(biology))
 
 ## Running the tests
-
 To run the tests, run the command `dotnet test` from within the exercise directory.
 
 ## Autoformatting the code
-
 F# source code can be formatted with the [Fantomas](https://github.com/fsprojects/fantomas) tool.
-
 After installing it with `dotnet tool restore`, run `dotnet fantomas .` to format code within the current directory.
 
 ## Further information
-
 For more detailed information about the F# track, including how to get help if
 you're having trouble, please visit the exercism.io [F# language page](http://exercism.io/languages/fsharp/resources).
 
 ## Source
-
 Tyler Long
 
