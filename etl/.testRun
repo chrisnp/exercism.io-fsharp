@@ -28,7 +28,6 @@ Total tests: 4
 
 
 
-
 >dotnet test
 
 Test run for ~\exercism\fsharp\etl\bin\Debug\netcoreapp3.0\Etl.dll(.NETCoreApp,Version=v3.0)
