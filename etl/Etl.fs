@@ -1,11 +1,12 @@
 ﻿module Etl
 
-let transform (scoresWithLetters: Map<int, char list>): Map<char, int> = 
+let transform (legacyData: Map<int, char list>): Map<char, int> = 
     let flipPairs (score : int, letters : char list) = 
         letters 
-        |> Seq.map (fun letter -> 
-                    (char ((string letter).ToLowerInvariant()), score))
-    scoresWithLetters
+        |> Seq.map (fun letr -> 
+                        (char ((string letr).ToLowerInvariant()), 
+                         score))
+    legacyData
     |> Map.toSeq
     |> Seq.collect flipPairs
     |> Map.ofSeq
