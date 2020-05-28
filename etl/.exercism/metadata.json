@@ -1,9 +1,9 @@
 {
-  "track": "fsharp",
-  "exercise": "etl",
-  "id": "705e6ddb5c694987a9d617053cd29e73",
-  "url": "https://exercism.io/tracks/fsharp/exercises/etl/solutions/705e6ddb5c694987a9d617053cd29e73",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "fsharp",
+    "exercise": "etl",
+    "id": "705e6ddb5c694987a9d617053cd29e73",
+    "url": "https://exercism.io/tracks/fsharp/exercises/etl/solutions/705e6ddb5c694987a9d617053cd29e73",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }
