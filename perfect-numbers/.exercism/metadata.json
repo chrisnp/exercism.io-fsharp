@@ -1,9 +1,9 @@
 {
-  "track": "fsharp",
-  "exercise": "perfect-numbers",
-  "id": "0ef54f3442ec4f1a88cc79621dfa4b4c",
-  "url": "https://exercism.io/tracks/fsharp/exercises/perfect-numbers/solutions/0ef54f3442ec4f1a88cc79621dfa4b4c",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "fsharp",
+    "exercise": "perfect-numbers",
+    "id": "0ef54f3442ec4f1a88cc79621dfa4b4c",
+    "url": "https://exercism.io/tracks/fsharp/exercises/perfect-numbers/solutions/0ef54f3442ec4f1a88cc79621dfa4b4c",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }
