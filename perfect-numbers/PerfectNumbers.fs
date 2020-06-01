@@ -16,9 +16,9 @@ let classify n : Classification option =
         None
     else 
         match aliquotSum with
-        | _ when aliquotSum = n -> 
-            Some Perfect
+        | _ when aliquotSum < n -> 
+            Some Deficient
         | _ when aliquotSum > n -> 
             Some Abundant
         | _ -> 
-            Some Deficient
+            Some Perfect
