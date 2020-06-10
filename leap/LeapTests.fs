@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 1.6.0 of the canonical data.
 
-module LeapTest
+module LeapTests
 
 open FsUnit.Xunit
 open Xunit
