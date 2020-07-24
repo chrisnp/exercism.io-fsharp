@@ -9,15 +9,17 @@ type LinkedList<'T> = { mutable front: 'T Node Option }
 let mkLinkedList () = { front = None }
 
 let addToEmpty newValue linkedList = 
-    let newNode = Some { payload = newValue 
-                         prevNode = None 
-                         nextNode = None }
+    let newNode = 
+        Some { payload = newValue 
+               prevNode = None 
+               nextNode = None }
     linkedList.front <- newNode
 
 
 let pop linkedList = 
     match linkedList.front with
-    | None -> failwith "empty list"
+    | None -> 
+        failwith "empty list"
     | Some x -> 
         let mutable p = x
         while p.nextNode <> None do 
@@ -31,7 +33,8 @@ let pop linkedList =
 
 let shift linkedList = 
     match linkedList.front with
-    | None -> failwith "empty list - nothing to shift"
+    | None -> 
+        failwith "empty list - nothing to shift"
     | Some x ->
         let mutable p = x
         if p.nextNode <> None then 
