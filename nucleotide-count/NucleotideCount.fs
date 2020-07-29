@@ -4,7 +4,8 @@
 let nucleotides = ['A';'C';'G';'T']
 
 let nucleotideCounts (strand: string): Option<Map<char, int>> =  
-    match strand.ToCharArray() 
+    match strand
+          .ToCharArray() 
           |> Array.forall (fun x -> 
                            Seq.contains x nucleotides) 
         with
