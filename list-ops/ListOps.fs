@@ -5,8 +5,10 @@ let inline (><) f x y = f y x
 
 let rec foldl folder state list = 
    match list with
-   | [] -> state
-   | x::xs -> foldl folder (folder state x) xs
+   | [] -> 
+      state
+   | x::xs -> 
+      foldl folder (folder state x) xs
 
 // API
 let length list = 
@@ -24,7 +26,8 @@ let map f list =
 let filter f list = 
    foldr (fun x state -> 
                   if f x then x::state 
-                         else state) [] list
+                         else state) 
+         [] list
 
 let append xs ys = 
    foldr (fun x state -> x::state) ys xs

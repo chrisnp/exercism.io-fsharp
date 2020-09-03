@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 2.4.1 of the canonical data.
 
-module ListOpsTest
+module ListOpsTests
 
 open FsUnit.Xunit
 open Xunit
