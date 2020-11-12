@@ -8,35 +8,28 @@ let modifier x =
 
 let ability() = 
     List.init 4 (fun _ -> 
-                 System.Random().Next(6) + 1)
+                    System.Random()
+                          .Next(6) + 1)
     |> List.skip 1 
     |> List.sum
 
-type DndCharacter() =
-    let strength = 
-            ability()
-    let dexterity = 
-            ability()
-    let constitution = 
-            ability()
-    let intelligence = 
-            ability()
-    let wisdom = 
-            ability()
-    let charisma = 
-            ability()
-    member __.Strength with get() = 
-        strength
-    member __.Dexterity with get() = 
-        dexterity
-    member __.Constitution with get() = 
-        constitution
-    member __.Intelligence with get() = 
-        intelligence
-    member __.Wisdom with get() = 
-        wisdom
-    member __.Charisma with get() = 
-        charisma
-    member __.Hitpoints with get() = 
-        modifier(__.Constitution) + 10
+type Character =
+    { Strength: int
+      Dexterity: int
+      Constitution: int
+      Intelligence: int
+      Wisdom: int
+      Charisma: int }
+    member this.Hitpoints = 
+        modifier (this.Constitution) + 10
+    
+    
+let createCharacter() : Character =  
+    { Strength = ability ()
+      Dexterity = ability ()
+      Constitution = ability ()
+      Intelligence = ability ()
+      Wisdom = ability ()
+      Charisma = ability () }
+    
 
