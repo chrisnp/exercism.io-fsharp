@@ -67,7 +67,7 @@ Total tests: 6
 
 >dotnet test
 
-Test run for C:\Users\Chris\exercism\fsharp\rna-transcription\bin\Debug\netcoreapp3.0\RnaTranscription.dll(.NETCoreApp,Version=v3.0)
+Test run for ~\exercism\fsharp\rna-transcription\bin\Debug\netcoreapp3.0\RnaTranscription.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
