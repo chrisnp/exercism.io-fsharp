@@ -7,6 +7,7 @@ open Xunit
 
 open RnaTranscription
 
+
 [<Fact>]
 let ``Empty RNA sequence`` () =
     toRna "" |> should equal ""
