@@ -12,6 +12,12 @@ The sum of these multiples is 78.
 
 To run the tests, run the command `dotnet test` from within the exercise directory.
 
+## Autoformatting the code
+
+F# source code can be formatted with the [Fantomas](https://github.com/fsprojects/fantomas) tool.
+
+After installing it with `dotnet tool restore`, run `dotnet fantomas .` to format code within the current directory.
+
 ## Further information
 
 For more detailed information about the F# track, including how to get help if
@@ -21,5 +27,3 @@ you're having trouble, please visit the exercism.io [F# language page](http://ex
 
 A variation on Problem 1 at Project Euler [http://projecteuler.net/problem=1](http://projecteuler.net/problem=1)
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
