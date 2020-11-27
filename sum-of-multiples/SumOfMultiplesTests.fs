@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 1.5.0 of the canonical data.
 
-module SumOfMultiplesTest
+module SumOfMultiplesTests
 
 open FsUnit.Xunit
 open Xunit
