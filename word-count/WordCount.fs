@@ -5,15 +5,15 @@ open System
 let countWords (phrase: string) = 
     let allowed (ch: char) =
         Array.contains ch [|' ';'\'';','|]
-        || ch |> Char.IsDigit 
-        || ch |> Char.IsLetter 
+        || Char.IsDigit <| ch 
+        || Char.IsLetter <| ch 
     let sanitized = 
         phrase.ToLowerInvariant()
         |> Seq.filter allowed
         |> String.Concat
     let tokens = 
         sanitized.Split([|' ';','|])
-        |> Seq.filter (String.IsNullOrEmpty >> not)
+        |> Seq.filter (not << String.IsNullOrEmpty)
         |> Seq.map (fun x -> x.Trim('''))
     tokens
     |> Seq.groupBy id
