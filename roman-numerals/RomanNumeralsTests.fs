@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 1.2.0 of the canonical data.
 
-module RomanNumeralsTest
+module RomanNumeralsTests
 
 open FsUnit.Xunit
 open Xunit
