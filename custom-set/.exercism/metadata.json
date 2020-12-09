@@ -1,9 +1,9 @@
 {
-  "track": "fsharp",
-  "exercise": "custom-set",
-  "id": "b9164e5cd3594ca794b5c4048979a379",
-  "url": "https://exercism.io/tracks/fsharp/exercises/custom-set/solutions/b9164e5cd3594ca794b5c4048979a379",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "fsharp",
+    "exercise": "custom-set",
+    "id": "b9164e5cd3594ca794b5c4048979a379",
+    "url": "https://exercism.io/tracks/fsharp/exercises/custom-set/solutions/b9164e5cd3594ca794b5c4048979a379",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }
