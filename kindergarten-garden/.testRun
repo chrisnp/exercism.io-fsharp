@@ -24,3 +24,20 @@ Starting test execution, please wait...
 Total tests: 9. Passed: 9. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 11.2375 Seconds
+
+
+
+dotnet test>
+
+Test run for ~\exercism\fsharp\kindergarten-garden\bin\Debug\netcoreapp3.0\KindergartenGarden.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 9
+     Passed: 9
+ Total time: 2.1072 Seconds
