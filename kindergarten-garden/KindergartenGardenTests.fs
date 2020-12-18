@@ -1,6 +1,6 @@
 // This file was auto-generated based on version 1.1.1 of the canonical data.
 
-module KindergartenGardenTest
+module KindergartenGardenTests
 
 open FsUnit.Xunit
 open Xunit
