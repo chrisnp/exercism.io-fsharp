@@ -1,0 +1,14 @@
+  Determining projects to restore...
+C:\Program Files\dotnet\sdk\5.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'netcoreapp3.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [~\exercism\fsharp\roman-numerals\RomanNumerals.fsproj]
+C:\Program Files\dotnet\sdk\5.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'netcoreapp3.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [~\exercism\fsharp\roman-numerals\RomanNumerals.fsproj]
+  All projects are up-to-date for restore.
+C:\Program Files\dotnet\sdk\5.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'netcoreapp3.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [~\exercism\fsharp\roman-numerals\RomanNumerals.fsproj]
+  RomanNumerals -> ~\exercism\fsharp\roman-numerals\bin\Debug\netcoreapp3.0\RomanNumerals.dll
+Test run for ~\exercism\fsharp\roman-numerals\bin\Debug\netcoreapp3.0\RomanNumerals.dll (.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.1
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    19, Skipped:     0, Total:    19, Duration: 82 ms - RomanNumerals.dll (netcoreapp3.0)
