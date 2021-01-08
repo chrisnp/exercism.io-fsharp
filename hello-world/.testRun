@@ -19,7 +19,7 @@ Test execution time: 13.3917 Seconds
 
 >dotnet test
 
-Test run for C:\Users\Chris\exercism\fsharp\hello-world\bin\Debug\netcoreapp3.0\HelloWorld.dll(.NETCoreApp,Version=v3.0)
+Test run for ~\exercism\fsharp\hello-world\bin\Debug\netcoreapp3.0\HelloWorld.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
