@@ -11,6 +11,6 @@ let canAttack (queen1: int * int) (queen2: int * int) =
     match (x1 - x2 |> abs, y1 - y2 |> abs) 
         with
         | (0, 0) -> failwith "Error: Both queens on same square"
-        | (0, _) -> true // horizontal attack
-        | (_, 0) -> true // vertical attack
-        | (x, y) -> x / y = 1 // diagonal attack, if true
+        | (0, _) -> true  // horizontal attack
+        | (_, 0) -> true  // vertical attack
+        | (x, y) -> x = y // diagonal attack, if true
