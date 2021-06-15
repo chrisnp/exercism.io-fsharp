@@ -73,3 +73,26 @@ Test Run Successful.
 Total tests: 12
      Passed: 12
  Total time: 2.7507 Seconds
+
+
+
+>dotnet test
+
+  Determining projects to restore...
+
+  Restored ~\exercism\fsharp\queen-attack\QueenAttack.fsproj (in 615 ms).
+
+  QueenAttack -> ~\exercism\fsharp\queen-attack\bin\Debug\netcoreapp3.0\QueenAttack.dll
+Test run for ~\exercism\fsharp\queen-attack\bin\Debug\netcoreapp3.0\QueenAttack.dll (.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.3
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!
+Failed:    0, 
+Passed:   12, 
+Skipped:   0, 
+Total:    12, 
+Duration: 71 ms - QueenAttack.dll (netcoreapp3.0)
