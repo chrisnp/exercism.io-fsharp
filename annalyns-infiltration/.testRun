@@ -1,0 +1,19 @@
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  AnnalynsInfiltration -> ~\exercism\fsharp\annalyns-infiltration\bin\Debug\net5.0\AnnalynsInfiltration.dll
+Test run for ~\exercism\fsharp\annalyns-infiltration\bin\Debug\net5.0\AnnalynsInfiltration.dll (.NETCoreApp,Version=v5.0)
+
+Microsoft (R) Test Execution Command Line Tool Version 16.8.3
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - 
+Failed:    0, 
+Passed:   30, 
+Skipped:   0, 
+Total:    30, 
+Duration: 88 ms - AnnalynsInfiltration.dll (net5.0)
