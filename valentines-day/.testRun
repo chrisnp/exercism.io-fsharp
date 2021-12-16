@@ -1,0 +1,20 @@
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  ValentinesDay -> ~\exercism\fsharp\valentines-day\bin\Debug\net5.0\ValentinesDay.dll
+Test run for ~\exercism\fsharp\valentines-day\bin\Debug\net5.0\ValentinesDay.dll (.NETCoreApp,Version=v5.0)
+
+Microsoft (R) Test Execution Command Line Tool Version 16.8.3
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  -
+  Failed:     0, 
+  Passed:    14, 
+  Skipped:    0, 
+  Total:     14, 
+
+Duration:  87 ms - ValentinesDay.dll (net5.0)
