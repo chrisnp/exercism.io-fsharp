@@ -18,7 +18,7 @@ let annualBalanceUpdate(balance: decimal): decimal =
    |> (+) (balance |> interest)
 
 let amountToDonate(balance: decimal) (taxFreePercentage: float): int =
-   let donationRate = (taxFreePercentage |> decimal) |> (/) 100m
+   let donationPercent = (/) (taxFreePercentage |> decimal) 100m
    if balance > 0m then
       balance 
       |> (*) 2m 
