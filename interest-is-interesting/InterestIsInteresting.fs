@@ -22,6 +22,6 @@ let amountToDonate(balance: decimal) (taxFreePercentage: float): int =
    if balance > 0m then
       balance 
       |> (*) 2m 
-      |> (*) donationRate 
+      |> (*) donationPercent
       |> int
    else 0
