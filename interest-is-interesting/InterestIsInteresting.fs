@@ -10,7 +10,7 @@ let interestRate (balance: decimal): single =
    | _ -> 0f
 
 let interest (balance: decimal): decimal =
-   let rate = (/) (balance |> interestRate |> decimal) 100m
+   let rate = (/) (balance |> interestRate |> decimal) 100m  
    balance |> (*) rate
 
 let annualBalanceUpdate(balance: decimal): decimal =
