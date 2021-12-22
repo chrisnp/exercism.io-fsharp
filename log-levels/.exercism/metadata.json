@@ -1,9 +1,1 @@
-{
-    "track": "fsharp",
-    "exercise": "log-levels",
-    "id": "ed8ee17082154f3c8377dfb60ff18074",
-    "url": "https://exercism.org/tracks/fsharp/exercises/log-levels/solutions/ed8ee17082154f3c8377dfb60ff18074",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"fsharp","exercise":"log-levels","id":"ed8ee17082154f3c8377dfb60ff18074","url":"https://exercism.org/tracks/fsharp/exercises/log-levels","handle":"heptalophos","is_requester":true,"auto_approve":false}
