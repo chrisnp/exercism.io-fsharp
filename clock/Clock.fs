@@ -7,7 +7,7 @@ let private dayMins = 1440
 let private modDay = (%) >> (|>) dayMins
 
 let private canonical time = 
-    if time >= 0 then modDay(time) else modDay(time) + dayMins
+    if time >= 0 then time |> modDay else (time |> modDay) + dayMins
 
 let create hours minutes = (+) ((*) 60 hours) minutes |> canonical
 
