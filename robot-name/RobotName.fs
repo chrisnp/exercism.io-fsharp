@@ -11,10 +11,7 @@ let generateName() =
 
 type Robot = { name : string }
 
-let mkRobot() = 
-    { name = generateName() }
-let name robot = 
-    robot.name
-let reset robot = 
-    { robot with name = generateName() } 
+let mkRobot() = { name = generateName() }
+let name robot = robot.name
+let reset robot = { robot with name = generateName() } 
 
