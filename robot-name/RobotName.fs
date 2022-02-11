@@ -3,11 +3,9 @@
 open System
 
 let generateName() = 
-    let alpha = ['A'..'Z']
-    let random = Random()
-    string (alpha.[random.Next(26)]) + 
-    string (alpha.[random.Next(26)]) + 
-    (string (random.Next(999)))
+    string (['A'..'Z'].[Random().Next(26)]) + 
+    string (['A'..'Z'].[Random().Next(26)]) + 
+    string (Random().Next(999))
 
 type Robot = { name : string }
 
