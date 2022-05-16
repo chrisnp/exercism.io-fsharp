@@ -1,10 +1,13 @@
 module Bandwagoner
 
-// TODO: please define the 'Coach' record type
+type Coach = { Name: string; FormerPlayer: bool }
 
-// TODO: please define the 'Stats' record type
+type Stats = { Wins: int; Losses: int }
 
-// TODO: please define the 'Team' record type
+type Team =
+    { Name: string
+      Coach: Coach
+      Stats: Stats }
 
 let createCoach (name: string) (formerPlayer: bool): Coach =
     failwith "Please implement the 'createCoach' function"
