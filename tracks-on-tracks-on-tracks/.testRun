@@ -1,0 +1,18 @@
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  TracksOnTracksOnTracks -> ~\exercism\fsharp\tracks-on-tracks-on-tracks\bin\Debug\net5.0\TracksOnTracksOnTracks.dll
+
+Test run for ~\exercism\fsharp\tracks-on-tracks-on-tracks\bin\Debug\net5.0\TracksOnTracksOnTracks.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.3
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    24, 
+           Skipped:    0, 
+           Total:     24, 
+           Duration: 216 ms - TracksOnTracksOnTracks.dll (net5.0)
