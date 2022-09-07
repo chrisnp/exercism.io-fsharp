@@ -1,0 +1,13 @@
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  BirdWatcher -> C:\Users\Chris\exercism\fsharp\bird-watcher\bin\Debug\net5.0\BirdWatcher.dll
+Test run for C:\Users\Chris\exercism\fsharp\bird-watcher\bin\Debug\net5.0\BirdWatcher.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.3
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    19, Skipped:     0, Total:    19, Duration: 107 ms - BirdWatcher.dll (net5.0)
