@@ -1,19 +1,29 @@
 module BirdWatcher
 
 let lastWeek: int[] =
-   failwith "Please implement the 'lastWeek' value"
+   [| 0; 2; 5; 3; 7; 8; 4 |]
 
 let yesterday(counts: int[]): int =
-  failwith "Please implement the 'yesterday' function"
+  counts |> Seq.item 5
 
 let total(counts: int[]): int =
-  failwith "Please implement the 'total' function"
+  counts |> Seq.sum
 
 let dayWithoutBirds(counts: int[]): bool =
-  failwith "Please implement the 'dayWithoutBirds' function"
+  counts |> Seq.contains 0
 
 let incrementTodaysCount(counts: int[]): int[] =
- failwith "Please implement the 'incrementTodaysCount' function"
+  counts.[counts.Length - 1] <- counts.[counts.Length - 1] + 1
+  counts 
 
 let oddWeek(counts: int[]): bool =
-  failwith "Please implement the 'oddWeek' function"
+  let isOdd n = n % 2 = 1
+  let tuple a b = (a, b)
+  counts |> Seq.mapi tuple |> Seq.filter (fst >> isOdd) 
+         |> Seq.map snd |> Seq.forall ((=) 0)
+  ||
+  counts |> Seq.mapi tuple |> Seq.filter (fst >> isOdd) 
+         |> Seq.map snd |> Seq.forall ((=) 10)
+  ||
+  counts |> Seq.mapi tuple |> Seq.filter (fst >> isOdd >> not) 
+         |> Seq.map snd |> Seq.forall ((=) 5)
