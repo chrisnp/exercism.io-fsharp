@@ -3,13 +3,18 @@ module BookingUpForBeauty
 // The following line is needed to use the DateTime type
 open System
 
-let schedule (appointmentDateDescription: string): DateTime = failwith "Please implement the 'schedule' function"
+let schedule = DateTime.Parse    
 
-let hasPassed (appointmentDate: DateTime): bool = failwith "Please implement the 'hasPassed' function"
+let hasPassed = (>) DateTime.Now
 
 let isAfternoonAppointment (appointmentDate: DateTime): bool =
-    failwith "Please implement the 'isAfternoonAppointment' function"
+    let
+        time = appointmentDate.Hour 
+    in
+        (&&) ((<=) 12 <| time) ((>) 18 <| time)
 
-let description (appointmentDate: DateTime): string = failwith "Please implement the 'description' function"
+let description (appointmentDate: DateTime): string  = 
+    sprintf <| "You have an appointment on %A." <| appointmentDate
 
-let anniversaryDate(): DateTime = failwith "Please implement the 'anniversaryDate' function"
+let anniversaryDate(): DateTime = 
+    new DateTime(DateTime.Now.Year, 9, 15, 0, 0, 0)
