@@ -23,7 +23,7 @@ let primes limit =
 let prime nth : int option = 
     let theoreticalLimit p : int =
         let n = float p 
-        (2. + (((4. / 3.) * n * System.Math.Log(n |> float, 2.)))) 
+        (2. + (((4. / 3.) * n * System.Math.Log2(n |> float)))) 
         |> int
     if nth <= 0 then 
         None
