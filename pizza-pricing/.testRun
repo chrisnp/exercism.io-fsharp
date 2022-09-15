@@ -1,0 +1,18 @@
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  PizzaPricing -> ~\exercism\fsharp\pizza-pricing\bin\Debug\net6.0\PizzaPricing.dll
+
+Test run for ~\exercism\fsharp\pizza-pricing\bin\Debug\net6.0\PizzaPricing.dll (.NETCoreApp,Version=v6.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.3.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    13, 
+           Skipped:    0, 
+           Total:     13, 
+           Duration:  75 ms - PizzaPricing.dll (net6.0)
