@@ -18,3 +18,25 @@ Passed:    12,
 Skipped:    0, 
 Total:     12, 
 Duration: 105 ms - PrimeFactors.dll (net5.0)
+
+
+
+>dotnet test
+
+  Determining projects to restore...
+  Restored ~\exercism\fsharp\prime-factors\PrimeFactors.fsproj (in 1.61 sec).
+  PrimeFactors -> ~\exercism\fsharp\prime-factors\bin\Debug\net6.0\PrimeFactors.dll
+
+Test run for ~\exercism\fsharp\prime-factors\bin\Debug\net6.0\PrimeFactors.dll (.NETCoreApp,Version=v6.0)
+
+Microsoft (R) Test Execution Command Line Tool Version 17.3.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    12, 
+           Skipped:    0, 
+           Total:     12, 
+           Duration:  27 ms - PrimeFactors.dll (net6.0)
