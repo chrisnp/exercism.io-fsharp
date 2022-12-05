@@ -46,3 +46,19 @@ Test Run Successful.
 Total tests: 19
      Passed: 19
  Total time: 2.3266 Seconds
+
+
+
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  DndCharacter -> C:\Users\Chris\exercism\fsharp\dnd-character\bin\Debug\net6.0\DndCharacter.dll
+Test run for C:\Users\Chris\exercism\fsharp\dnd-character\bin\Debug\net6.0\DndCharacter.dll (.NETCoreApp,Version=v6.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.3.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    19, Skipped:     0, Total:    19, Duration: 84 ms - DndCharacter.dll (net6.0)
