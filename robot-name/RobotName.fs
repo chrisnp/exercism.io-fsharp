@@ -2,14 +2,25 @@
 
 open System
 
-let generateName() = 
-    string (['A'..'Z'].[Random().Next(26)]) + 
-    string (['A'..'Z'].[Random().Next(26)]) + 
-    string (Random().Next(999))
-
 type Robot = { name : string }
 
-let mkRobot() = { name = generateName() }
-let name robot = robot.name
-let reset robot = { robot with name = generateName() } 
+let generateName() = 
+    let alpha = ['A'..'Z']
+    let random = Random()
+    string (alpha.[random.Next(26)]) + 
+    string (alpha.[random.Next(26)]) + 
+    (string (random.Next(999)))
 
+let mutable usedNames : string list = []
+
+let rec mkRobot() = 
+    let newRobot = generateName()
+    if List.contains newRobot usedNames then
+        mkRobot()
+    else 
+        usedNames <- newRobot::usedNames
+        { name = newRobot } 
+
+let name robot = robot.name
+
+let reset robot = mkRobot() 

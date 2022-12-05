@@ -18,10 +18,20 @@ let ``Name is the same each time`` () =
     name robot |> should equal (name robot)
     
 [<Fact>]
-let ``Different robots have different names`` () = 
+let ``2 Different robots have different names`` () = 
     let robot = mkRobot()
     let robot2 = mkRobot()
     name robot |> should not' (equal (name robot2))
+
+[<Fact>] 
+let ``2500 Different robots have different names``() =
+    let robotCount = 2500
+    seq { 1 .. robotCount }
+    |> Seq.map (fun _ -> mkRobot())
+    |> Seq.map (fun robot -> name robot)
+    |> Set
+    |> Set.count
+    |> should equal robotCount
     
 [<Fact>]
 let ``Can reset the name`` () =  
