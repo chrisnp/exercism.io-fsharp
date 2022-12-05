@@ -94,3 +94,24 @@ Passed:     4,
 Skipped:    0, 
 Total:      4, 
 Duration:   72 ms - RobotName.dll (net5.0)
+
+
+
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  RobotName -> ~\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll
+
+Test run for ~\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll (.NETCoreApp,Version=v6.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.3.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:     5, 
+           Skipped:    0, 
+           Total:      5, 
+           Duration:   276 ms - RobotName.dll (net6.0)
