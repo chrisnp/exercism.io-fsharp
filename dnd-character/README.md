@@ -1,5 +1,10 @@
 # D&D Character
 
+Welcome to D&D Character on Exercism's F# Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
 For a game of [Dungeons & Dragons][DND], each player starts by generating a
 character they can play with. This character has, among other things, six
 abilities; strength, dexterity, constitution, intelligence, wisdom and
@@ -32,22 +37,20 @@ programming languages are designed to roll dice. One such language is [Troll].
 [DND]: https://en.wikipedia.org/wiki/Dungeons_%26_Dragons
 [Troll]: http://hjemmesider.diku.dk/~torbenm/Troll/
 
-## Running the tests
-
-To run the tests, run the command `dotnet test` from within the exercise directory.
-
-## Autoformatting the code
-
-F# source code can be formatted with the [Fantomas](https://github.com/fsprojects/fantomas) tool.
-
-After installing it with `dotnet tool restore`, run `dotnet fantomas .` to format code within the current directory.
-
-## Further information
-
-For more detailed information about the F# track, including how to get help if
-you're having trouble, please visit the exercism.io [F# language page](http://exercism.io/languages/fsharp/resources).
-
 ## Source
 
-Simon Shine, Erik Schierboom [https://github.com/exercism/problem-specifications/issues/616#issuecomment-437358945](https://github.com/exercism/problem-specifications/issues/616#issuecomment-437358945)
+### Created by
 
+- @davidelettieri
+
+### Contributed to by
+
+- @ErikSchierboom
+- @jrr
+- @robkeim
+- @valentin-p
+- @wolf99
+
+### Based on
+
+Simon Shine, Erik Schierboom - https://github.com/exercism/problem-specifications/issues/616#issuecomment-437358945
