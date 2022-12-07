@@ -1,9 +1,12 @@
 ﻿module DndCharacter
 
-let modifier x = float (x - 10) / 2.0 |> System.Math.Floor |> int
+open System
 
-let ability() = List.init 4 (fun _ -> System.Random().Next(6) + 1) 
-                |> List.skip 1 |> List.sum
+let modifier x = float (x - 10) / 2.0 |> Math.Floor |> int
+
+let ability() = Seq.init 4 (fun _ -> Random().Next(6) + 1) 
+                |> Seq.skip 1 
+                |> Seq.fold(fun sum x -> sum + x) 0
 
 type Character() =
     let strength: int = ability()
