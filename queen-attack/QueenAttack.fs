@@ -14,4 +14,3 @@ let canAttack (queen1: int * int) (queen2: int * int) =
         | (0, _) -> true  // horizontal attack
         | (_, 0) -> true  // vertical attack
         | (x, y) -> x = y // diagonal attack, if true
-        // | (_, _) -> false
