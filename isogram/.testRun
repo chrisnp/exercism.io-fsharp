@@ -64,3 +64,25 @@ Test Run Successful.
 Total tests: 13
      Passed: 13
  Total time: 5.5876 Seconds
+
+
+
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Isogram -> C:\Users\Chris\exercism\fsharp\isogram\bin\Debug\net6.0\Isogram.dll
+Test run for C:\Users\Chris\exercism\fsharp\isogram\bin\Debug\net6.0\Isogram.dll (.NETCoreApp,Version=v6.0)
+
+Microsoft (R) Test Execution Command Line Tool Version 17.6.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed! 
+Failed:     0, 
+Passed:    13, 
+Skipped:    0, 
+Total:     13, 
+Duration: 39 ms - Isogram.dll (net6.0)
