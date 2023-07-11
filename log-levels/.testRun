@@ -46,8 +46,8 @@ Duration:  70 ms - LogLevels.dll (net5.0)
 
   Determining projects to restore...
   All projects are up-to-date for restore.
-  LogLevels -> C:\Users\Chris\exercism\fsharp\log-levels\bin\Debug\net7.0\LogLevels.dll
-Test run for C:\Users\Chris\exercism\fsharp\log-levels\bin\Debug\net7.0\LogLevels.dll (.NETCoreApp,Version=v7.0)
+  LogLevels -> ~\exercism\fsharp\log-levels\bin\Debug\net7.0\LogLevels.dll
+Test run for ~\exercism\fsharp\log-levels\bin\Debug\net7.0\LogLevels.dll (.NETCoreApp,Version=v7.0)
 
 Microsoft (R) Test Execution Command Line Tool Version 17.6.0 (x64)
 Copyright (c) Microsoft Corporation.  All rights reserved.
