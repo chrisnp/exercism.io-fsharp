@@ -41,3 +41,25 @@ Test Run Successful.
 Total tests: 9
      Passed: 9
  Total time: 2.1072 Seconds
+
+
+
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  KindergartenGarden ->~\exercism\fsharp\kindergarten-garden\bin\Debug\net7.0\KindergartenGarden.dll
+Test run for ~\exercism\fsharp\kindergarten-garden\bin\Debug\net7.0\KindergartenGarden.dll (.NETCoreApp,Version=v7.0)
+
+Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - 
+Failed:     0, 
+Passed:    17, 
+Skipped:    0, 
+Total:     17, 
+Duration:  49 ms - KindergartenGarden.dll (net7.0)
