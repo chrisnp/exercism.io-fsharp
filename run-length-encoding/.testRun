@@ -1,0 +1,19 @@
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  RunLengthEncoding -> ~\exercism\fsharp\run-length-encoding\bin\Debug\net7.0\RunLengthEncoding.dll
+Test run for ~\exercism\fsharp\run-length-encoding\bin\Debug\net7.0\RunLengthEncoding.dll (.NETCoreApp,Version=v7.0)
+
+Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - 
+Failed:     0, 
+Passed:    13, 
+Skipped:    0, 
+Total:     13, 
+Duration: 48 ms - RunLengthEncoding.dll (net7.0)
