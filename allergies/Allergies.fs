@@ -1,5 +1,7 @@
 module Allergies
 
+open System
+
 type Allergen = 
     | Eggs         = 0x01
     | Peanuts      = 0x02
@@ -14,7 +16,7 @@ let allergicTo codedAllergies allergen =
     int allergen &&& codedAllergies <> 0
 
 let list codedAllergies = 
-    System.Enum.GetValues typeof<Allergen>
+    Enum.GetValues typeof<Allergen>
     |> Seq.cast<Allergen>
     |> Seq.filter (allergicTo codedAllergies)
     |> Seq.toList
