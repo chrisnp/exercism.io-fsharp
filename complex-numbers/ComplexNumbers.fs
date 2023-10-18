@@ -1,40 +1,37 @@
 module ComplexNumbers
 
-type ComplexNumber = {re: float; im: float}
+type ComplexNumber = { real: float; imag: float }
 
-let create real imaginary = { re = real; im = imaginary} 
+let create (real: float) (imaginary: float): ComplexNumber = 
+    { real = real; imag = imaginary }
 
-let mul z1 z2 = 
-    let real = z1.re * z2.re - z1.im * z2.im
-    let imag = z1.im * z2.re + z1.re * z2.im
-    create real imag
+let mul (z1: ComplexNumber) (z2: ComplexNumber): ComplexNumber = 
+    (z1.real * z2.real - z1.imag * z2.imag, 
+     z1.imag * z2.real + z1.real * z2.imag) 
+    ||> create
 
-let add z1 z2 = 
-    let real = z1.re + z2.re
-    let imag = z1.im + z2.im
-    create real imag
+let add (z1: ComplexNumber) (z2: ComplexNumber): ComplexNumber = 
+    (z1.real + z2.real, z1.imag + z2.imag) ||> create
 
-let sub z1 z2 = 
-    let real = z1.re - z2.re
-    let imag = z1.im - z2.im
-    create real imag
+let sub (z1: ComplexNumber) (z2: ComplexNumber): ComplexNumber = 
+    (z1.real - z2.real, z1.imag - z2.imag) ||> create
 
-let div z1 z2 = 
-    let quot = z2.re ** 2.0 + z2.im ** 2.0
-    let real = (z1.re * z2.re + z1.im * z2.im) / quot
-    let imag = (z1.im * z2.re - z1.re * z2.im) / quot
-    create real imag
+let div (z1: ComplexNumber) (z2: ComplexNumber): ComplexNumber = 
+    let quot = z2.real ** 2.0 + z2.imag ** 2.0
+    ((z1.real * z2.real + z1.imag * z2.imag) / quot, 
+     (z1.imag * z2.real - z1.real * z2.imag) / quot) 
+    ||> create
 
-let abs z = ( z.re ** 2.0 + z.im ** 2.0 ) ** 0.5
+let abs (z: ComplexNumber): float = 
+    ( z.real ** 2.0 + z.imag ** 2.0 ) ** 0.5
 
-let conjugate z = create z.re -z.im
+let conjugate (z: ComplexNumber): ComplexNumber = create z.real -z.imag
 
-let real z = z.re
+let real (z: ComplexNumber): float = z.real
 
-let imaginary z = z.im
+let imaginary (z: ComplexNumber): float = z.imag
 
-let exp z = 
-    let xp   = z.re |> System.Math.Exp
-    let real = xp * (z.im |> System.Math.Cos) 
-    let imag = xp * (z.im |> System.Math.Sin) 
-    create real imag
+let exp (z: ComplexNumber): ComplexNumber = 
+    let xp   = z.real |> System.Math.Exp
+    (xp * (z.imag |> System.Math.Cos), xp * (z.imag |> System.Math.Sin)) 
+    ||> create

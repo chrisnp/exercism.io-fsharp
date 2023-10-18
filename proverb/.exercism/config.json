@@ -11,19 +11,19 @@
   ],
   "files": {
     "solution": [
-      "ComplexNumbers.fs"
+      "Proverb.fs"
     ],
     "test": [
-      "ComplexNumbersTests.fs"
+      "ProverbTests.fs"
     ],
     "example": [
       ".meta/Example.fs"
     ],
     "invalidator": [
-      "ComplexNumbers.fsproj"
+      "Proverb.fsproj"
     ]
   },
-  "blurb": "Implement complex numbers.",
+  "blurb": "For want of a horseshoe nail, a kingdom was lost, or so the saying goes. Output the full text of this proverbial rhyme.",
   "source": "Wikipedia",
-  "source_url": "https://en.wikipedia.org/wiki/Complex_number"
+  "source_url": "https://en.wikipedia.org/wiki/For_Want_of_a_Nail"
 }
