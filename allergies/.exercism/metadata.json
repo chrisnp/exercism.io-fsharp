@@ -1,9 +1,1 @@
-{
-    "track": "fsharp",
-    "exercise": "allergies",
-    "id": "88b95ea4b4fa4ea382de343ee1c53bd9",
-    "url": "https://exercism.org/tracks/fsharp/exercises/allergies/solutions/88b95ea4b4fa4ea382de343ee1c53bd9",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"fsharp","exercise":"allergies","id":"88b95ea4b4fa4ea382de343ee1c53bd9","url":"https://exercism.org/tracks/fsharp/exercises/allergies","handle":"heptalophos","is_requester":true,"auto_approve":false}
