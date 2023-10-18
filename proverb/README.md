@@ -1,8 +1,14 @@
 # Proverb
 
+Welcome to Proverb on Exercism's F# Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
 For want of a horseshoe nail, a kingdom was lost, or so the saying goes.
 
-Given a list of inputs, generate the relevant proverb. For example, given the list `["nail", "shoe", "horse", "rider", "message", "battle", "kingdom"]`, you will output the full text of this proverbial rhyme:
+Given a list of inputs, generate the relevant proverb.
+For example, given the list `["nail", "shoe", "horse", "rider", "message", "battle", "kingdom"]`, you will output the full text of this proverbial rhyme:
 
 ```text
 For want of a nail the shoe was lost.
@@ -14,28 +20,25 @@ For want of a battle the kingdom was lost.
 And all for the want of a nail.
 ```
 
-Note that the list of inputs may vary; your solution should be able to handle lists of arbitrary length and content. No line of the output text should be a static, unchanging string; all should vary according to the input given.
+Note that the list of inputs may vary; your solution should be able to handle lists of arbitrary length and content.
+No line of the output text should be a static, unchanging string; all should vary according to the input given.
 
-## Hints
 - Try to capture the structure of the song in your code, where you build up the song by composing its parts.
-
-
-## Running the tests
-
-To run the tests, run the command `dotnet test` from within the exercise directory.
-
-## Autoformatting the code
-
-F# source code can be formatted with the [Fantomas](https://github.com/fsprojects/fantomas) tool.
-
-After installing it with `dotnet tool restore`, run `dotnet fantomas .` to format code within the current directory.
-
-## Further information
-
-For more detailed information about the F# track, including how to get help if
-you're having trouble, please visit the exercism.io [F# language page](http://exercism.io/languages/fsharp/resources).
 
 ## Source
 
-Wikipedia [http://en.wikipedia.org/wiki/For_Want_of_a_Nail](http://en.wikipedia.org/wiki/For_Want_of_a_Nail)
+### Created by
 
+- @ErikSchierboom
+
+### Contributed to by
+
+- @jrr
+- @lestephane
+- @robkeim
+- @valentin-p
+- @wolf99
+
+### Based on
+
+Wikipedia - https://en.wikipedia.org/wiki/For_Want_of_a_Nail
