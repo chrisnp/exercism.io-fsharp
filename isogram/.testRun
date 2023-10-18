@@ -71,8 +71,8 @@ Total tests: 13
 
   Determining projects to restore...
   All projects are up-to-date for restore.
-  Isogram -> C:\Users\Chris\exercism\fsharp\isogram\bin\Debug\net6.0\Isogram.dll
-Test run for C:\Users\Chris\exercism\fsharp\isogram\bin\Debug\net6.0\Isogram.dll (.NETCoreApp,Version=v6.0)
+  Isogram -> ~\exercism\fsharp\isogram\bin\Debug\net6.0\Isogram.dll
+Test run for ~\exercism\fsharp\isogram\bin\Debug\net6.0\Isogram.dll (.NETCoreApp,Version=v6.0)
 
 Microsoft (R) Test Execution Command Line Tool Version 17.6.0 (x64)
 Copyright (c) Microsoft Corporation.  All rights reserved.
