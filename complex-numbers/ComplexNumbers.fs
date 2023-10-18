@@ -1,21 +1,37 @@
 module ComplexNumbers
 
-let create real imaginary = failwith "You need to implement this function."
+type ComplexNumber = { real: float; imag: float }
 
-let mul z1 z2 = failwith "You need to implement this function."
+let create (real: float) (imaginary: float): ComplexNumber = 
+    { real = real; imag = imaginary }
 
-let add z1 z2 = failwith "You need to implement this function."
+let mul (z1: ComplexNumber) (z2: ComplexNumber): ComplexNumber = 
+    (z1.real * z2.real - z1.imag * z2.imag, 
+     z1.imag * z2.real + z1.real * z2.imag) 
+    ||> create
 
-let sub z1 z2 = failwith "You need to implement this function."
+let add (z1: ComplexNumber) (z2: ComplexNumber): ComplexNumber = 
+    (z1.real + z2.real, z1.imag + z2.imag) ||> create
 
-let div z1 z2 = failwith "You need to implement this function."
+let sub (z1: ComplexNumber) (z2: ComplexNumber): ComplexNumber = 
+    (z1.real - z2.real, z1.imag - z2.imag) ||> create
 
-let abs z = failwith "You need to implement this function."
+let div (z1: ComplexNumber) (z2: ComplexNumber): ComplexNumber = 
+    let quot = z2.real ** 2.0 + z2.imag ** 2.0
+    ((z1.real * z2.real + z1.imag * z2.imag) / quot, 
+     (z1.imag * z2.real - z1.real * z2.imag) / quot) 
+    ||> create
 
-let conjugate z = failwith "You need to implement this function."
+let abs (z: ComplexNumber): float = 
+    ( z.real ** 2.0 + z.imag ** 2.0 ) ** 0.5
 
-let real z = failwith "You need to implement this function."
+let conjugate (z: ComplexNumber): ComplexNumber = create z.real -z.imag
 
-let imaginary z = failwith "You need to implement this function."
+let real (z: ComplexNumber): float = z.real
 
-let exp z = failwith "You need to implement this function."
+let imaginary (z: ComplexNumber): float = z.imag
+
+let exp (z: ComplexNumber): ComplexNumber = 
+    let xp   = z.real |> System.Math.Exp
+    (xp * (z.imag |> System.Math.Cos), xp * (z.imag |> System.Math.Sin)) 
+    ||> create
