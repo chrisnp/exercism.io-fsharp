@@ -64,9 +64,9 @@ Thu Oct 26 22:06:22 GTBDT 2023
 
   Determining projects to restore...
   All projects are up-to-date for restore.
-  RobotName -> C:\Users\Chris\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll
+  RobotName -> ~\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll
 
-Test run for C:\Users\Chris\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll (.NETCoreApp,Version=v6.0)
+Test run for ~\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll (.NETCoreApp,Version=v6.0)
 Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
