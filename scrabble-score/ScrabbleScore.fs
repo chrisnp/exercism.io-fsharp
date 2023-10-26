@@ -13,6 +13,5 @@ let private letterValue = function
     | 'L' | 'N' | 'R' | 'S' | 'T' -> 1
     | _                           -> 0
 
-let score (word: string) = word 
-    |> Seq.sumBy (Char.ToUpperInvariant 
-                  >> letterValue)
+let score (word: string): int = 
+    word |> Seq.sumBy (Char.ToUpperInvariant >> letterValue)
