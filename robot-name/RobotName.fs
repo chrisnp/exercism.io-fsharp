@@ -7,15 +7,16 @@ type Robot = { name : string }
 let generateName() = 
     let alpha = ['A'..'Z']
     let random = Random()
-    string (alpha.[random.Next(26)]) + 
-    string (alpha.[random.Next(26)]) + 
-    (string (random.Next(999)))
+    let letters = string (alpha.[random.Next(26)]) + 
+                  string (alpha.[random.Next(26)])  
+    let digits = string (random.Next(999))
+    letters + digits
 
 let mutable usedNames : string list = []
 
 let rec mkRobot() = 
     let newRobot = generateName()
-    if List.contains newRobot usedNames then
+    if List.contains newRobot usedNames then 
         mkRobot()
     else 
         usedNames <- newRobot::usedNames
