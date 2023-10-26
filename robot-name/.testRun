@@ -30,47 +30,7 @@ A total of 1 test files matched the specified pattern.
 Test Run Successful.
 Total tests: 4
      Passed: 4
- Total time: 2.8041 Seconds
-
-
-
->dotnet test
-
-Test run for ~\exercism\fsharp\robot-name\bin\Debug\netcoreapp3.0\RobotName.dll(.NETCoreApp,Version=v3.0)
-Microsoft (R) Test Execution Command Line Tool Version 16.3.0
-Copyright (c) Microsoft Corporation.  All rights reserved.
-
-Starting test execution, please wait...
-
-A total of 1 test files matched the specified pattern.
-
-Test Run Successful.
-Total tests: 4
-     Passed: 4
  Total time: 1.7021 Seconds
-
-
-
->dotnet test
-
-  Determining projects to restore...
-
-  All projects are up-to-date for restore.
-
-  RobotName -> ~\exercism\fsharp\robot-name\bin\Debug\netcoreapp3.0\RobotName.dll
-Test run for ~\exercism\fsharp\robot-name\bin\Debug\netcoreapp3.0\RobotName.dll (.NETCoreApp,Version=v3.0)
-Microsoft (R) Test Execution Command Line Tool Version 16.8.3
-Copyright (c) Microsoft Corporation.  All rights reserved.
-
-Starting test execution, please wait...
-A total of 1 test files matched the specified pattern.
-
-Passed!  - 
-Failed:     0, 
-Passed:     4, 
-Skipped:    0, 
-Total:      4, 
-Duration: 66 ms - RobotName.dll (netcoreapp3.0)
 
 
 
@@ -97,14 +57,17 @@ Duration:   72 ms - RobotName.dll (net5.0)
 
 
 
+================================================================================
+Thu Oct 26 22:06:22 GTBDT 2023
+================================================================================
 >dotnet test
 
   Determining projects to restore...
   All projects are up-to-date for restore.
-  RobotName -> ~\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll
+  RobotName -> C:\Users\Chris\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll
 
-Test run for ~\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll (.NETCoreApp,Version=v6.0)
-Microsoft (R) Test Execution Command Line Tool Version 17.3.1 (x64)
+Test run for C:\Users\Chris\exercism\fsharp\robot-name\bin\Debug\net6.0\RobotName.dll (.NETCoreApp,Version=v6.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
@@ -114,4 +77,4 @@ Passed!  - Failed:     0,
            Passed:     5, 
            Skipped:    0, 
            Total:      5, 
-           Duration:   276 ms - RobotName.dll (net6.0)
+           Duration: 95 ms - RobotName.dll (net6.0)
