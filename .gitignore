@@ -223,6 +223,7 @@ orleans.codegen.cs
 /../solution.json
 cleanup.ps1
 cleanup.sh
+prepareTests.ps1
 .ionide/
 .vscode/
 .fake
