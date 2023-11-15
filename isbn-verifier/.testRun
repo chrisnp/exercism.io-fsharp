@@ -18,3 +18,26 @@ Passed:    19,
 Skipped:    0, 
 Total:     19, 
 Duration:  44 ms - IsbnVerifier.dll (net7.0)
+
+
+
+================================================================================
+Fri Oct 27 19:08:23 GTBDT 2023
+================================================================================
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  IsbnVerifier -> ~\exercism\fsharp\isbn-verifier\bin\Debug\net7.0\IsbnVerifier.dll
+Test run for ~\exercism\fsharp\isbn-verifier\bin\Debug\net7.0\IsbnVerifier.dll (.NETCoreApp,Version=v7.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    19, 
+           Skipped:    0, 
+           Total:     19, 
+           Duration:  47 ms - IsbnVerifier.dll (net7.0)
