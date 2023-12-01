@@ -14,3 +14,26 @@ Starting test execution, please wait...
 Total tests: 14. Passed: 14. Failed: 0. Skipped: 0.
 Test Run Successful.
 Test execution time: 11.9524 Seconds
+
+
+
+================================================================================
+Fri Dec  1 16:28:25 GTBST 2023
+================================================================================
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  PhoneNumber -> ~\exercism\fsharp\phone-number\bin\Debug\net7.0\PhoneNumber.dll
+Test run for ~\exercism\fsharp\phone-number\bin\Debug\net7.0\PhoneNumber.dll (.NETCoreApp,Version=v7.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    18, 
+           Skipped:    0, 
+           Total:     18, 
+           Duration:  48 ms - PhoneNumber.dll (net7.0)

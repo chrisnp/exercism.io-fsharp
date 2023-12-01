@@ -1,55 +1,35 @@
 ﻿module PhoneNumber
 
 open System
-
-let validate str ((fn: string -> bool), error: string) =
-    match fn str 
-    | True  -> Some error 
-    | False -> None
-
-let remove (fn: string -> char seq) (str: string): string =
-    str
-    |> Seq.filter fn
-    |> String.Concat
-
-let contains (cset: char seq) (str: string) =
-    String.exists (fun c -> (Seq.contains c cset)) str
-
-let clean (input: string) =
-   
-    let sanitized = 
-        remove (fun x -> "-+.,() \t" |> (Seq.contains x >> not) input
-
-    let filteredDigits = 
-        String.filter Char.IsDigit input
-    
-    let correctlyFormatted = 
-        match filterDigits.Length = 11 
-        | True -> filterDigits.[1..] 
-        | False -> filterDigits
-    
-    let noLetters = Seq.pick (validate <|| (fun x -> x |> contains (seq {'a'..'z'})) "letters not permitted") input
-    let noPunctuation = Seq.pick (validate <|| (fun x -> x |> contains (seq {'!';'@';'#';'$';'%';'^';'&';'*'})) "punctuations not permitted") input
-    let tooLarge = Seq.pick (validate <|| (fun x -> x.Length > 11) "more than 11 digits") filterDigits
-    let tooSmall = Seq.pick filterDigits |> (validate <|| (fun x -> x.Length < 10) "incorrect number of digits")
-    let wrongFirst = Seq.pick filterDigits |> (validate <|| (fun x -> p.Length = 11 && x.[0] <> '1') "11 digits must start with 1") 
-    let areaCodeZero = Seq.pick filterDigits |> (validate <|| (fun x -> p.Length = 10 && x.[0] = '0') "area code cannot start with zero")  
-    let areaCodeOne = Seq.pick filterDigits |> (validate <|| (fun x -> p.Length = 10 && x.[0] = '1') "area code cannot start with one")  
-    let xchangeCodeZero = Seq.pick filterDigits |> (validate <|| (fun x -> p.Length = 10 && x.[3] = '0') "exchange code cannot start with zero")  
-    let xchangeCodeOne = Seq.pick filterDigits |> (validate <|| (fun x -> p.Length = 10 && x.[3] = '1') "exchange code cannot start with one") 
-
-    let formatIt str = str |> uint64
-
-    Ok input
-    |> Result.bind noLetters 
-    |> Result.bind noPunctuation
-    |> Result.map  sanitized
-    |> Result.bind tooLarge
-    |> Result.bind tooSmall
-    |> Result.bind wrongFirst
-    |> Result.bind areaCodeZero
-    |> Result.bind areaCodeOne
-    |> Result.bind xchangeCodeZero
-    |> Result.bind xchangeCodeOne
-    |> Result.map  formatIt
-    
+ 
+let rec clean (input: string) : Result<uint64, string> =
+   if  input |> Seq.exists (Char.IsLetter) then 
+      Error "letters not permitted"
+   elif input |> Seq.exists (fun c ->  Char.IsPunctuation(c) && 
+                                       (['('; ')'; '-'; '.'] 
+                                       |> List.contains c |> not)) then 
+      Error  "punctuations not permitted"
+   else 
+      let digits: char list = input |> Seq.filter (Char.IsDigit) |> Seq.toList
+      if (digits |> Seq.length) > 11 then 
+         Error "more than 11 digits"
+      elif (digits |> Seq.length) < 10 then
+         Error "incorrect number of digits"
+      elif (digits |> Seq.length = 11) && (digits.[0] <> '1') then 
+         Error "11 digits must start with 1"
+      elif digits |> Seq.length = 11 then
+         clean (digits |> Seq.tail |> Seq.toArray |> System.String)
+      else 
+         if digits.[0] = '0' then 
+            Error "area code cannot start with zero"
+         elif digits.[0] = '1' then 
+            Error "area code cannot start with one"
+         elif digits.[3] = '0' then 
+            Error "exchange code cannot start with zero"
+         elif digits.[3] = '1' then 
+            Error "exchange code cannot start with one"
+         else
+            match System.UInt64.TryParse (digits |> Seq.toArray
+                                                 |> System.String) with
+            | true, number -> Ok number
+            | _, _ -> Error ""
