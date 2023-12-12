@@ -19,3 +19,27 @@ Passed!  - Failed:     0,
            Skipped:    0, 
            Total:     43, 
            Duration:  57 ms - RationalNumbers.dll (net7.0)
+
+
+
+================================================================================
+Tue Dec 12 15:09:15 GTBST 2023
+================================================================================
+>dotnet test
+
+  Determining projects to restore...
+  Restored ~\exercism\fsharp\rational-numbers\RationalNumbers.fsproj (in 517 ms).
+  RationalNumbers -> ~\exercism\fsharp\rational-numbers\bin\Debug\net7.0\RationalNumbers.dll
+  
+Test run for ~\exercism\fsharp\rational-numbers\bin\Debug\net7.0\RationalNumbers.dll (.NETCoreApp,Version=v7.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    43, 
+           Skipped:    0, 
+           Total:     43, 
+           Duration:  55 ms - RationalNumbers.dll (net7.0)
