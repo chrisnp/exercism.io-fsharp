@@ -18,7 +18,7 @@ let rec encode input =
     match input with
     | "" -> ""
     | Count (n, c, rest) -> (emit c n) + (encode rest) 
-    | _ -> failwith "Here to prevent warning FS0025 (by preserving tail recursion)"
+    | _ -> failwith "Here to prevent warning FS0025 (tail recursion is preserved, with previous pattern)"
 
 let private (|Digits|_|) (str: String)= 
     let dsMatch = 
@@ -34,4 +34,4 @@ let rec decode input =
     match input with
     | "" -> ""
     | Digits (n, c, rest) -> String(c, n) + (decode rest)
-    | _ -> failwith "Here to prevent warning FS0025 (by preserving tail recursion)"
+    | _ -> failwith "Here to prevent warning FS0025 (tail recursion is preserved though..)"

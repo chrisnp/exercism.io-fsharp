@@ -21,26 +21,25 @@ let create (numerator: int) (denominator: int): Rational =
 
 let add (r1: Rational) (r2: Rational): Rational = 
     let (a1, b1), (a2, b2) = r1, r2
-    (a1 * b2 + a2 * b1, b1 * b2) |> reduce
+    (a1 * b2 + a2 * b1, b1 * b2) ||> create
 
 let sub (r1: Rational) (r2: Rational): Rational = 
-    let (a1, b1), (a2, b2) = r1, r2
-    (a1 * b2 - a2 * b1, b1 * b2) |> reduce
+    let (a2, b2) = r2
+    add r1 (-a2, b2) |> reduce
 
 let mul (r1: Rational) (r2: Rational): Rational = 
     let (a1, b1), (a2, b2) = r1, r2
-    (a1 * a2, b1 * b2) |> reduce
+    (a1 * a2, b1 * b2) ||> create 
 
 let div (r1: Rational) (r2: Rational): Rational = 
     let (a2, b2) = r2
-    if b2 = 0 then failwith "Division by 0"
-    else mul r1 (b2, a2) |> reduce
+    mul r1 (b2, a2) |> reduce
 
 let abs (r: Rational): Rational =
     let (a, b) = r
     let apos = if a < 0 then -1 * a else a
     let bpos = if b < 0 then -1 * b else b
-    (apos, bpos) |> reduce
+    (apos, bpos) ||> create
 
 let exprational (n: int) (r: Rational): Rational = 
     let (a, b) = r 
@@ -49,7 +48,7 @@ let exprational (n: int) (r: Rational): Rational =
     else 
         let a, b, n = 
             if n > 0 then a, b, n else b, a, -n
-        (pown a n, pown b n) |> reduce
+        (pown a n, pown b n) ||> create
 
 let expreal (r: Rational) (n: int): float = 
     let (a, b) = r
