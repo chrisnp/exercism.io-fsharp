@@ -29,7 +29,7 @@ Tue Dec 12 15:11:03 GTBST 2023
   Restored ~\exercism\fsharp\run-length-encoding\RunLengthEncoding.fsproj (in 512 ms).
   RunLengthEncoding -> ~\exercism\fsharp\run-length-encoding\bin\Debug\net7.0\RunLengthEncoding.dll
 
-Test run for ~\exercism\fsharp\run-length-encoding\bin\Debug\net7.0\RunLengthEncoding.dll (.NETCoreApp,Version=v7.0)
+Test run for ~\exercism\fsharp\run-length-encoding\bin\Debug\net7.0\RunLengthEncoding.dll (.NETCoreApp, Version=v7.0)
 Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
