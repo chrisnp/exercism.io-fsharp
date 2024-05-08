@@ -16,3 +16,26 @@ Passed!  - Failed:     0,
            Skipped:    0, 
            Total:     25, 
            Duration: 69 ms - BookingUpForBeauty.dll (net5.0)
+
+
+
+================================================================================
+Wed May  8 15:08:21 GTBDT 2024
+================================================================================
+>dotnet test
+
+  Determining projects to restore...
+  Restored ~\exercism\fsharp\booking-up-for-beauty\BookingUpForBeauty.fsproj (in 875 ms).
+  BookingUpForBeauty -> ~\exercism\fsharp\booking-up-for-beauty\bin\Debug\net7.0\BookingUpForBeauty.dll
+Test run for ~\exercism\fsharp\booking-up-for-beauty\bin\Debug\net7.0\BookingUpForBeauty.dll (.NETCoreApp,Version=v7.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    25, 
+           Skipped:    0, 
+           Total:     25, 
+           Duration: 48 ms - BookingUpForBeauty.dll (net7.0)
