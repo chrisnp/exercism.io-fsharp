@@ -6,6 +6,8 @@ If you get stuck on the exercise, check out `HINTS.md`, but try and solve it wit
 
 ## Introduction
 
+## Arrays
+
 An `array` in F# is a mutable collection of zero or more values with a fixed length. This means that once an array has been created, its size cannot change, but its values can. The values in an array must all have the same type. Arrays can be defined as follows:
 
 ```fsharp
@@ -24,10 +26,10 @@ Elements can be assigned to an array or retrieved from it using an index. F# arr
 let numbers = [| 2; 3; 5 |]
 
 // Update value in array
-numbers.[2] <- 9
+numbers[2] <- 9
 
 // Read value from array
-numbers.[2]
+numbers[2]
 // => 9
 ```
 
@@ -55,10 +57,10 @@ let describe array =
     | [| _; y |] -> "Array with two items (first item ignored)"
     | _ -> "Array with many items (all items ignored)"
 
-describe []         // => "Empty array"
-describe [1]        // => "Array with one item"
-describe [5; 7]     // => "Array with two items (first item ignored)"
-describe [5; 7; 9]  // => "Array with many items (all items ignored)"
+describe [| |]          // => "Empty array"
+describe [| 1 |]        // => "Array with one item"
+describe [| 5; 7 |]     // => "Array with two items (first item ignored)"
+describe [| 5; 7; 9 |]  // => "Array with many items (all items ignored)"
 ```
 
 The single `'_'` should always come _last_ when pattern matching, every value that _doesn't_ match any of the other cases will be handled by this case.
@@ -115,22 +117,24 @@ incrementTodaysCount birdCount
 // => [| 3; 5; 0; 7; 4; 2 |]
 ```
 
-## 6. Check for odd week
+## 6. Check for unusual week
 
-Over the last year, you've found that some weeks have the same, odd patterns:
+Over the last year, you've found that some weeks have the same, unusual patterns:
 - On each even day of the week, there were no birds
 - On each even day of the week, exactly 10 birds were spotted
 - On each odd day of the week, exactly 5 birds were spotted
 
-Implement the `oddWeek` function that returns `true` if the bird count pattern of this week matches one of the odd patterns:
+Implement the `unusualWeek` function that returns `true` if the bird count pattern of this week matches one of the unusual patterns:
 
 ```fsharp
-oddWeek [| 1; 0; 5; 0; 12; 0; 2 |]
+unusualWeek [| 1; 0; 5; 0; 12; 0; 2 |]
 // => true
 
-oddWeek [| 5; 0; 5; 12; 5; 3; 5|]
+unusualWeek [| 5; 0; 5; 12; 5; 3; 5|]
 // => true
 ```
+
+(Note that day-parity is 1-indexed, not 0-indexed - the first element in the array corresponds with an odd day)
 
 ## Source
 
