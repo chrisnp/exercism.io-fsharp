@@ -16,3 +16,26 @@ Passed!  - Failed:     0,
            Skipped:    0, 
            Total:     19, 
            Duration: 107 ms - BirdWatcher.dll (net5.0)
+
+
+
+================================================================================
+Fri May 10 23:21:38 GTBDT 2024
+================================================================================
+>dotnet test
+
+  Determining projects to restore...
+  Restored ~\exercism\fsharp\bird-watcher\BirdWatcher.fsproj (in 477 ms).
+  BirdWatcher -> ~\exercism\fsharp\bird-watcher\bin\Debug\net7.0\BirdWatcher.dll
+Test run for ~\exercism\fsharp\bird-watcher\bin\Debug\net7.0\BirdWatcher.dll (.NETCoreApp,Version=v7.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.6.3 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    19, 
+           Skipped:    0, 
+           Total:     19, 
+           Duration: 36 ms - BirdWatcher.dll (net7.0)
