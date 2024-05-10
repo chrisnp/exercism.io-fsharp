@@ -19,11 +19,17 @@ let incrementTodaysCount(counts: int[]): int[] =
 let oddWeek(counts: int[]): bool =
   let isOdd n = n % 2 = 1
   let tuple a b = (a, b)
-  counts |> Seq.mapi tuple |> Seq.filter (fst >> isOdd) 
-         |> Seq.map snd |> Seq.forall ((=) 0)
+  counts |> Seq.mapi tuple 
+         |> Seq.filter (fst >> isOdd) 
+         |> Seq.map snd 
+         |> Seq.forall ((=) 0)
   ||
-  counts |> Seq.mapi tuple |> Seq.filter (fst >> isOdd) 
-         |> Seq.map snd |> Seq.forall ((=) 10)
+  counts |> Seq.mapi tuple 
+         |> Seq.filter (fst >> isOdd) 
+         |> Seq.map snd 
+         |> Seq.forall ((=) 10)
   ||
-  counts |> Seq.mapi tuple |> Seq.filter (fst >> isOdd >> not) 
-         |> Seq.map snd |> Seq.forall ((=) 5)
+  counts |> Seq.mapi tuple 
+         |> Seq.filter (fst >> isOdd >> not) 
+         |> Seq.map snd 
+         |> Seq.forall ((=) 5)
