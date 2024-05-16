@@ -33,3 +33,29 @@ Test Run Successful.
 Total tests: 7
      Passed: 7
  Total time: 6.0148 Seconds
+
+
+
+================================================================================
+Thu May 16 22:20:23 GTBDT 2024
+================================================================================
+>dotnet test
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  GradeSchool -> ~\exercism\fsharp\grade-school\bin\Debug\net8.0\GradeSchool.dll
+
+Test run for 
+    ~\exercism\fsharp\grade-school\bin\Debug\net8.0\GradeSchool.dll (.NETCoreApp,Version=v8.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.9.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    15, 
+           Skipped:    0, 
+           Total:     15, 
+           Duration:  74 ms - GradeSchool.dll (net8.0)
