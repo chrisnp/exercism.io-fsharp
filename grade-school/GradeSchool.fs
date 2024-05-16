@@ -9,13 +9,11 @@ let grade (number : int) (school : School) : string list =
     | Some students -> students
     | None -> []
 
-let private studentExists (student : string) (school : School) : bool =
-    school
-    |> Map.exists (fun _ students -> List.contains student students) 
-
 let add (student : string) (inGrade : int) (school : School) : School = 
+    let exists (x : string) (s : School) : bool =
+        s |> Map.exists (fun _ xs -> List.contains x xs)
     let current = school |> grade inGrade
-    if school |> studentExists student then
+    if school |> exists student then
         school
     else
         school
