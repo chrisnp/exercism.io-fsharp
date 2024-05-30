@@ -1,1 +1,9 @@
-{"track":"fsharp","exercise":"luhn","id":"41e42e9e2f01473aabb80f6d4d79b0ba","url":"https://exercism.org/tracks/fsharp/exercises/luhn","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "fsharp",
+    "exercise": "luhn",
+    "id": "41e42e9e2f01473aabb80f6d4d79b0ba",
+    "url": "https://exercism.org/tracks/fsharp/exercises/luhn/solutions/41e42e9e2f01473aabb80f6d4d79b0ba",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
