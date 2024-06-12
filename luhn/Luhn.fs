@@ -18,6 +18,11 @@ let valid number =
           sanitary |> String.forall Char.IsDigit |> not
     with
     | true -> false
-    | _ -> sanitary |> Seq.map (Char.GetNumericValue >> int)
-           |> Seq.rev |> List.ofSeq |> DoubleEvens [] |> List.sum
-           |> (<|>) (%) 10 |> (=) 0
+    | _ -> sanitary 
+           |> Seq.map (Char.GetNumericValue >> int)
+           |> Seq.rev 
+           |> List.ofSeq 
+           |> DoubleEvens [] 
+           |> List.sum
+           |> (<|>) (%) 10 
+           |> (=) 0
