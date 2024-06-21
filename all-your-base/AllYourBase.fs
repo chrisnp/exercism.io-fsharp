@@ -14,21 +14,26 @@ let rebase digits inputBase outputBase =
     let numberIn newBase fromDigits = 
         let len = (fromDigits : int list).Length
         fromDigits 
-        |> List.mapi (fun p d -> d * int(double(newBase) ** double(len - 1 - p)))
+        |> List.mapi (
+               fun p d -> d * int(double(newBase) ** double(len - 1 - p))
+           )
         |> List.sum
 
     let digitsIn newBase fromNumber = 
         fromNumber
-        |> List.unfold (fun x -> 
-                            if x = 0 then 
-                                None 
-                            else 
-                                Some((><) <| System.Math.DivRem(x, newBase)))
+        |> List.unfold (
+               fun x -> if x = 0 then 
+                            None 
+                        else 
+                            ((><) <| System.Math.DivRem(x, newBase)) 
+                            |> Some
+           )
         |> List.rev
 
-    if   errors then 
+    if errors then 
         None
     elif degenerate then 
-        Some[0]
+        [0] |> Some
     else
-        Some (digits |> numberIn inputBase |> digitsIn outputBase)
+        (digits |> numberIn inputBase |> digitsIn outputBase)
+        |> Some
