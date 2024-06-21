@@ -14,6 +14,7 @@ Test execution time: 3.6740 Seconds
 
 
 >dotnet test
+
 Test run for ~\exercism\fsharp\error-handling\bin\Debug\netcoreapp2.1\ErrorHandling.dll(.NETCoreApp,Version=v2.1)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -43,3 +44,27 @@ Test Run Successful.
 Total tests: 5
      Passed: 5
  Total time: 2.7702 Seconds
+
+
+
+================================================================================
+Wed Jun 19 13:57:46 GTBDT 2024
+================================================================================
+>dotnet test
+
+  Determining projects to restore...
+  Restored ~\exercism\fsharp\error-handling\ErrorHandling.fsproj (in 488 ms).
+  ErrorHandling -> ~\exercism\fsharp\error-handling\bin\Debug\net8.0\ErrorHandling.dll
+
+Test run for ~\exercism\fsharp\error-handling\bin\Debug\net8.0\ErrorHandling.dll (.NETCoreApp,Version=v8.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.9.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:     5, 
+           Skipped:    0, 
+           Total:      5, 
+           Duration:   22 ms - ErrorHandling.dll (net8.0)

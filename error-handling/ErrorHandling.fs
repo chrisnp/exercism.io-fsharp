@@ -5,17 +5,13 @@ let handleErrorByThrowingException() =
 
 let handleErrorByReturningOption (input:string) = 
     match System.Char.IsDigit(char input) with 
-    | true -> 
-        Some (int input)
-    | _ -> 
-        None
+    | true -> int input |> Some
+    | _ -> None
 
 let handleErrorByReturningResult (input:string) = 
     match System.Char.IsDigit(char input) with
-    | true -> 
-        Ok (int input)
-    | _ -> 
-        Error "Could not convert input to integer"
+    | true -> int input |> Ok
+    | _ -> Error "Could not convert input to integer"
 
 let bind switchFunction twoTrackInput = 
     match twoTrackInput with
@@ -25,5 +21,4 @@ let bind switchFunction twoTrackInput =
         Error e
 
 let cleanupDisposablesWhenThrowingException resource = 
-    using (resource) ( fun _ -> 
-                            raise(System.Exception()))
+    using (resource) ( fun _ -> raise(System.Exception()))
