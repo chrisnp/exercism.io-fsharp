@@ -2,16 +2,16 @@ module SecretHandshake
 
 let private actions = 
     [
-        fun protocol -> protocol @ ["wink"]
-        fun protocol -> protocol @ ["double blink"]
-        fun protocol -> protocol @ ["close your eyes"]
-        fun protocol -> protocol @ ["jump"]
-        fun protocol -> List.rev protocol
+        fun handshake -> handshake @ ["wink"]
+        fun handshake -> handshake @ ["double blink"]
+        fun handshake -> handshake @ ["close your eyes"]
+        fun handshake -> handshake @ ["jump"]
+        fun handshake -> List.rev handshake
     ]
 
 let commands number = 
-    let handshake = 
-        actions |> List.indexed
-                |> List.filter (fun (i, _) -> (number &&& (1 <<< i)) <> 0)
-                |> List.fold (fun acc (_, f) -> acc >> f) id
-    [] |> handshake 
+    actions 
+    |> List.indexed
+    |> List.filter (fun (idx, _) -> (number &&& (1 <<< idx)) <> 0)
+    |> List.fold (fun acc (_, action) -> acc >> action) id 
+    <| []
