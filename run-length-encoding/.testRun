@@ -41,3 +41,27 @@ Passed!  -  Failed:     0,
             Skipped:    0, 
             Total:     13, 
             Duration:  24 ms - RunLengthEncoding.dll (net7.0)
+
+
+
+================================================================================
+Wed Jun 19 14:16:37 GTBDT 2024
+================================================================================
+>dotnet test
+
+  Determining projects to restore...
+  Restored ~\exercism\fsharp\run-length-encoding\RunLengthEncoding.fsproj (in 478 ms).
+  RunLengthEncoding -> ~\exercism\fsharp\run-length-encoding\bin\Debug\net8.0\RunLengthEncoding.dll
+
+Test run for ~\exercism\fsharp\run-length-encoding\bin\Debug\net8.0\RunLengthEncoding.dll (.NETCoreApp,Version=v8.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.9.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, 
+           Passed:    13, 
+           Skipped:    0, 
+           Total:     13, 
+           Duration:  19 ms - RunLengthEncoding.dll (net8.0)
