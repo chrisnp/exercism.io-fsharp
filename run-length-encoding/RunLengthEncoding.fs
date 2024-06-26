@@ -8,7 +8,7 @@ let private (|Count|_|) (str: String) =
     else 
         let len = str |> Seq.takeWhile((=) str.[0]) 
                       |> Seq.length
-        Some (str.Substring(0, 1), len, str.[len..]) 
+        (str.Substring(0, 1), len, str.[len..]) |> Some 
 
 let rec encode input = 
     let emit times letter =
@@ -25,9 +25,9 @@ let private (|Digits|_|) (str: String)=
         Text.RegularExpressions.Regex.Match(str, "^([0-9]+)?([\w\s])")
     match dsMatch.Success, dsMatch.Groups.[1].Value with
     | true, "" -> 
-        Some (1, char dsMatch.Groups.[2].Value, str[dsMatch.Length..])
+        (1, char dsMatch.Groups.[2].Value, str[dsMatch.Length..]) |> Some
     | true, n ->
-        Some (int n, char dsMatch.Groups.[2].Value, str[dsMatch.Length..])
+        (int n, char dsMatch.Groups.[2].Value, str[dsMatch.Length..]) |> Some
     | false, _ -> None
 
 let rec decode input = 
