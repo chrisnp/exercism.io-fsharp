@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Clock.fs" />
-    <Compile Include="ClockTests.fs" />
+    <Compile Include="MatchingBrackets.fs" />
+    <Compile Include="MatchingBracketsTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
