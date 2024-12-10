@@ -7,11 +7,11 @@ let point (fn: int list -> int) (m: int list list) =
                 yield (i + 1, j + 1)]
 
 let saddlePoints (matrix: int list list): (int * int) list =
-    if matrix = [[]] then 
-        []
+    if matrix = [[]] then []
     else
         let transposed = List.transpose matrix 
         let maxRow = point List.max matrix 
         let minCol = List.map <|| 
-                     ((fun (x, y) -> (y, x)), (point List.min transposed))
+                     ((fun (x, y) -> (y, x)), 
+                      (point List.min transposed))
         maxRow |> List.filter (fun x -> List.contains x minCol)
