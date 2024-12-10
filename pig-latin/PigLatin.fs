@@ -23,7 +23,9 @@ let private piglatinize (input: string): string =
     |> fun x -> x + "ay"
 
 let translate (input: string) : string =
-    input.Split " " |> Seq.map piglatinize |> String.concat " "
+    input.Split(" ") 
+    |> Seq.map piglatinize 
+    |> String.concat " "
 
 
 
