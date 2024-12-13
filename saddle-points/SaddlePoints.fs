@@ -11,7 +11,6 @@ let saddlePoints (matrix: int list list): (int * int) list =
     else
         let transposed = List.transpose matrix 
         let maxRow = point List.max matrix 
-        let minCol = List.map <|| 
-                     ((fun (x, y) -> (y, x)), 
-                      (point List.min transposed))
+        let minCol = List.map <|| ((fun (x, y) -> (y, x)), 
+                                   (point List.min transposed))
         maxRow |> List.filter (fun x -> List.contains x minCol)
