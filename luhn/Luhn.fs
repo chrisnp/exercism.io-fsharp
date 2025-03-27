@@ -2,7 +2,7 @@ module Luhn
 
 open System
 
-let private (<|>) f x y = f y x 
+let private (<|>) f x y = f y x // the infamous flip, which is not builtin here
 
 let rec private DoubleEvens acc = 
     let f x = let y = 2 * x in if x < 5 then y else y - 9
@@ -14,15 +14,13 @@ let rec private DoubleEvens acc =
 
 let valid number = 
     let sanitary = number |> String.filter (Char.IsWhiteSpace >> not)
-    match sanitary.Length <= 1 || 
-          sanitary |> String.forall Char.IsDigit |> not
+    match sanitary.Length <= 1 || sanitary |> String.forall Char.IsDigit |> not
     with
     | true -> false
-    | _ -> sanitary 
-           |> Seq.map (Char.GetNumericValue >> int)
-           |> Seq.rev 
-           |> List.ofSeq 
-           |> DoubleEvens [] 
-           |> List.sum
-           |> (<|>) (%) 10 
-           |> (=) 0
+    | _ -> sanitary |> Seq.map (Char.GetNumericValue >> int)
+                    |> Seq.rev 
+                    |> List.ofSeq 
+                    |> DoubleEvens [] 
+                    |> List.sum
+                    |> (<|>) (%) 10 
+                    |> (=) 0
