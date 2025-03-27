@@ -15,9 +15,9 @@ let private piglatinize (input: string): string =
     | 'y'::'t'::_               -> $"{input}"
     | x::_ when vowel x         -> $"{input}"
     | x::'q'::'u'::_ 
-        when (not << vowel) x   -> $"{input.[3..]}{x}qu"
+      when (not << vowel) x     -> $"{input.[3..]}{x}qu"
     | x::_ 
-        when "pkxy".Contains x  -> $"{input.[1..]}{x}"
+      when "pkxy".Contains x    -> $"{input.[1..]}{x}"
     | x::['y']                  -> $"{input.[1]}{x}"
     | _                         -> $"{input.[1..]}{input.[0]}"
     |> fun x -> x + "ay"
